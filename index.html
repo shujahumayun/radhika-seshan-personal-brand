@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radhika Seshan · Homepage Design Concepts</title>
+<meta name="description" content="Two homepage design concepts for the Radhika Seshan personal brand site.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232E1B3D'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FFFFFF' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111111;
+    --iron:#3A3D42;
+    --body:#5A5F66;
+    --hairline:#E4E4E6;
+    --off:#FAFAFA;
+    --white:#FFFFFF;
+    --violet:#2E1B3D;
+    --plum:#5B2A46;
+    --font-display:'DM Serif Display', Georgia, serif;
+    --font-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:var(--font-body);color:var(--body);background:var(--white);
+    -webkit-font-smoothing:antialiased;line-height:1.6;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  header{padding:72px 0 0}
+  .eyebrow{
+    font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--violet);display:flex;align-items:center;gap:12px;
+  }
+  .eyebrow::after{content:"";flex:0 0 48px;height:1px;background:var(--violet);opacity:.4}
+  h1{
+    font-family:var(--font-display);font-weight:400;color:var(--ink);
+    font-size:clamp(34px,5vw,54px);line-height:1.12;letter-spacing:-.01em;margin:18px 0 16px;
+  }
+  h1 em{font-style:italic;color:var(--iron)}
+  .lede{font-size:17px;max-width:60ch}
+
+  .cards{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;margin:56px 0 0;
+  }
+  .card{
+    border:1px solid var(--hairline);border-radius:18px;overflow:hidden;
+    background:var(--white);display:flex;flex-direction:column;
+    transition:box-shadow .25s ease, transform .25s ease;
+  }
+  .card:hover{box-shadow:0 24px 60px rgba(17,17,17,.08);transform:translateY(-3px)}
+  .swatchbar{height:6px;display:flex}
+  .swatchbar span{flex:1}
+  .card-body{padding:30px 28px 28px;display:flex;flex-direction:column;flex:1}
+  .card h2{
+    font-family:var(--font-display);font-weight:400;color:var(--ink);
+    font-size:27px;line-height:1.2;margin:10px 0 12px;
+  }
+  .card .tag{
+    font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--body);
+  }
+  .card p{font-size:15px;margin-bottom:20px}
+  .spec{
+    list-style:none;border-top:1px solid var(--hairline);margin-top:auto;padding-top:18px;
+    font-size:14px;
+  }
+  .spec li{display:flex;gap:14px;padding:5px 0}
+  .spec b{
+    flex:0 0 88px;font-weight:600;color:var(--iron);font-size:11px;
+    letter-spacing:.1em;text-transform:uppercase;padding-top:3px;
+  }
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .btn{
+    display:inline-block;padding:13px 26px;border-radius:999px;
+    font-size:14px;font-weight:600;text-decoration:none;
+    transition:background .25s ease, transform .25s ease;
+  }
+  .btn-solid{background:var(--ink);color:var(--white)}
+  .btn-solid:hover{transform:translateY(-2px)}
+  .btn-ghost{border:1px solid var(--hairline);color:var(--iron)}
+  .btn-ghost:hover{border-color:var(--iron);transform:translateY(-2px)}
+  .card.one .btn-solid{background:var(--violet)}
+  .card.one .btn-solid:hover{background:#1F1229}
+  .card.two .btn-solid{background:var(--plum)}
+  .card.two .btn-solid:hover{background:#3f1a2f}
+
+  .note{
+    background:var(--off);border-radius:18px;padding:32px 30px;margin:56px 0 0;
+    border:1px solid var(--hairline);
+  }
+  .note h3{
+    font-family:var(--font-display);font-weight:400;color:var(--ink);
+    font-size:22px;margin-bottom:12px;
+  }
+  .note ul{margin:0;padding-left:20px;font-size:15px}
+  .note li{margin-bottom:7px}
+
+  footer{
+    margin-top:72px;border-top:1px solid var(--hairline);
+    padding:28px 0 64px;font-size:13px;color:#9A9EA6;
+  }
+
+  @media (max-width:640px){
+    header{padding-top:48px}
+    .spec b{flex-basis:76px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Radhika Seshan</p>
+    <h1>Two homepage <em>concepts</em>.</h1>
+    <p class="lede">Same words, same palette, two different personalities. Open each one, scroll the whole page, then tell me which structure feels like you. Everything here is a working design in the browser, not a flat picture, so buttons, hovers, and the mobile layout all behave the way the finished site will.</p>
+  </header>
+
+  <div class="cards">
+
+    <article class="card one">
+      <div class="swatchbar">
+        <span style="background:#111111"></span>
+        <span style="background:#3A3D42"></span>
+        <span style="background:#FAFAFA"></span>
+        <span style="background:#2E1B3D;flex:2"></span>
+      </div>
+      <div class="card-body">
+        <p class="tag">Concept One</p>
+        <h2>Editorial and calm</h2>
+        <p>A serif voice with a portrait card beside the headline. Sections arrive one clear idea at a time, and the page closes on an iron gray band. This is the quieter of the two.</p>
+        <ul class="spec">
+          <li><b>Type</b><span>DM Serif Display headlines, Inter for everything else</span></li>
+          <li><b>Accent</b><span>Deep violet, used only on small marks</span></li>
+          <li><b>Hero</b><span>Headline left, photograph in a card on the right</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-solid" href="concept-one/">View Concept One</a>
+          <a class="btn btn-ghost" href="concept-one/preview.html">Desktop and mobile</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card two">
+      <div class="swatchbar">
+        <span style="background:#111111"></span>
+        <span style="background:#3A3D42"></span>
+        <span style="background:#FAFAFA"></span>
+        <span style="background:#5B2A46;flex:2"></span>
+      </div>
+      <div class="card-body">
+        <p class="tag">Concept Two</p>
+        <h2>Bold and modern</h2>
+        <p>A full width photograph behind the opening headline, tighter type, and a two cell story block. More presence at first glance, and the page closes on a deep violet band.</p>
+        <ul class="spec">
+          <li><b>Type</b><span>Inter Tight headlines, one serif italic word for emphasis</span></li>
+          <li><b>Accent</b><span>Plum, used on rules, links, and the primary button</span></li>
+          <li><b>Hero</b><span>Full width photograph with the headline over it</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-solid" href="concept-two/">View Concept Two</a>
+          <a class="btn btn-ghost" href="concept-two/preview.html">Desktop and mobile</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="note">
+    <h3>Two things to keep in mind while you look</h3>
+    <ul>
+      <li><strong>The photographs are not you.</strong> Every image is a free stock placeholder, chosen only to hold the right shape and crop. Your own photographs replace them.</li>
+      <li><strong>The words are the draft deck</strong> from our content workshop, still waiting on your sign off. Read them, but judge the layout first.</li>
+      <li>The email address and the LinkedIn link are placeholders.</li>
+      <li>Both concepts follow the rules we agreed: no testimonials, no invented numbers, no pricing, and no employer name anywhere.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Homepage design concepts for radhikaseshan.com · Prepared 2026 by Shuja Humayun · Private review link, please do not share
+  </footer>
+
+</div>
+</body>
+</html>

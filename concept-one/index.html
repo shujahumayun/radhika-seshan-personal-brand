@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhika Seshan · Career Development, Coaching, Speaking and Advisory</title>
+<meta name="description" content="Career development built on striving and positive action. Coaching, speaking, and advisory with Radhika Seshan.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232E1B3D'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FFFFFF' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Radhika Seshan · Homepage Concept 2
+   Structure: Corvairo (client reference screenshot)
+   Design system: iron gray + deep violet (agreed client tokens)
+   Type: DM Serif Display (display) + Inter (body/nav/labels)
+   ============================================================ */
+:root{
+  --ink:#111111;
+  --iron:#3A3D42;
+  --body:#5A5F66;
+  --hairline:#E4E4E6;
+  --off:#FAFAFA;
+  --white:#FFFFFF;
+  --accent:#2E1B3D;
+  --font-display:'DM Serif Display', Georgia, serif;
+  --font-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --container:1200px;
+  --radius-img:18px;
+  --radius-input:12px;
+  --shadow-soft:0 24px 60px rgba(17,17,17,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  color:var(--body);
+  background:var(--white);
+  font-size:16.5px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+li{list-style:none}
+
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--accent);color:#fff;
+  padding:10px 18px;border-radius:0 0 10px 0;font-size:14px;
+}
+.skip-link:focus{left:0}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 48px}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.92);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hairline);
+}
+.header-inner{
+  max-width:var(--container);margin:0 auto;padding:0 48px;
+  height:72px;display:flex;align-items:center;justify-content:space-between;gap:32px;
+}
+.wordmark{
+  font-family:var(--font-display);
+  font-size:23px;font-weight:400;color:var(--ink);
+  letter-spacing:.01em;white-space:nowrap;
+}
+.site-nav{display:flex;align-items:center;gap:28px}
+.site-nav a{
+  font-size:14px;font-weight:500;color:var(--ink);
+  transition:color .25s ease;
+}
+.site-nav a:hover{color:var(--accent)}
+.nav-cta{
+  font-size:14px;font-weight:600;color:#fff;background:var(--accent);
+  padding:10px 20px;border-radius:999px;
+  border:1px solid var(--accent);
+  transition:background .25s ease, transform .25s ease;
+  white-space:nowrap;margin-left:6px;
+}
+.nav-cta:hover{background:#1F1229;transform:translateY(-1px)}
+.menu-toggle{
+  display:none;background:none;border:none;cursor:pointer;
+  width:44px;height:44px;border-radius:8px;
+  align-items:center;justify-content:center;
+}
+.menu-toggle span{
+  display:block;width:20px;height:2px;background:var(--ink);
+  margin:2.5px auto;transition:transform .3s ease, opacity .3s ease;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.mobile-nav{
+  display:none;background:var(--white);
+  border-top:1px solid var(--hairline);
+  padding:16px 48px 24px;
+}
+.mobile-nav a{
+  display:block;padding:12px 0;font-size:16px;font-weight:500;
+  color:var(--ink);border-bottom:1px solid var(--hairline);
+}
+.mobile-nav a:last-child{border-bottom:none}
+.mobile-nav .mobile-cta{
+  margin-top:14px;text-align:center;color:#fff;background:var(--accent);
+  border-radius:999px;border:1px solid var(--accent);font-weight:600;
+}
+.mobile-nav.open{display:block}
+
+/* ---------- Sections: shared ---------- */
+section{position:relative}
+.eyebrow{
+  font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);
+}
+.eyebrow-inline{display:flex;align-items:center;gap:14px}
+.eyebrow-inline::before{
+  content:"";display:block;width:28px;height:2px;background:var(--accent);
+}
+h2.display{
+  font-family:var(--font-display);font-weight:400;
+  color:var(--iron);
+  line-height:1.12;letter-spacing:-.01em;
+  text-wrap:balance;
+}
+p{max-width:62ch}
+.arrow{display:inline-block;transition:transform .25s ease}
+a.text-link:hover .arrow{transform:translateX(4px)}
+
+/* ---------- Hero ---------- */
+.hero{padding:88px 0 104px;background:var(--white)}
+.hero-grid{
+  display:grid;grid-template-columns:1.08fr .92fr;
+  gap:64px;align-items:center;
+}
+.hero-copy .eyebrow{margin-bottom:26px}
+.hero h1{
+  font-family:var(--font-display);font-weight:400;color:var(--ink);
+  font-size:clamp(40px, 4vw, 64px);
+  line-height:1.08;letter-spacing:-.01em;
+  text-wrap:balance;
+}
+.hero h1 em{
+  font-style:italic;color:var(--accent);
+}
+.hero-sub{
+  margin-top:28px;font-size:18px;line-height:1.7;
+  color:var(--body);max-width:46ch;
+}
+.hero-actions{
+  margin-top:40px;display:flex;align-items:center;gap:30px;flex-wrap:wrap;
+}
+.btn-primary{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--accent);color:#fff;
+  font-size:15px;font-weight:600;
+  padding:15px 30px;border-radius:999px;
+  border:1px solid var(--accent);
+  transition:background .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.btn-primary:hover{background:#1F1229;transform:translateY(-2px);box-shadow:0 12px 28px rgba(46,27,61,.22)}
+.btn-primary:active{transform:translateY(0)}
+.hero-wayfinding{
+  display:flex;align-items:center;gap:12px;
+  font-size:15px;font-weight:500;color:var(--ink);
+}
+.hero-wayfinding .dot{color:var(--hairline)}
+.hero-wayfinding a{transition:color .25s ease}
+.hero-wayfinding a:hover{color:var(--accent)}
+.hero-media{
+  border-radius:var(--radius-img);
+  border:1px solid var(--hairline);
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;background:var(--off);
+}
+.hero-media img{
+  width:100%;height:auto;
+  aspect-ratio:4/5;object-fit:cover;
+}
+
+/* ---------- Own your journey ---------- */
+.journey{background:var(--off);padding:112px 0}
+.journey-inner{max-width:780px;margin:0 auto;text-align:center}
+.journey-rule{
+  width:44px;height:3px;background:var(--accent);
+  margin:0 auto 30px;
+}
+.journey h2{font-size:clamp(34px, 3.6vw, 52px)}
+.journey p{
+  margin:22px auto 0;font-size:17px;line-height:1.85;
+  max-width:62ch;
+}
+.journey p:first-of-type{margin-top:34px}
+
+/* ---------- Origin story ---------- */
+.origin{padding:112px 0;background:var(--white)}
+.origin-grid{
+  display:grid;grid-template-columns:5fr 7fr;
+  gap:72px;align-items:center;
+}
+.origin-media{
+  border-radius:var(--radius-img);
+  border:1px solid var(--hairline);
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;background:var(--off);
+}
+.origin-media img{
+  width:100%;height:100%;
+  aspect-ratio:3/2;object-fit:cover;
+}
+.origin-copy .eyebrow{margin-bottom:20px}
+.origin h2{font-size:clamp(30px, 3.1vw, 46px)}
+.origin .lead{
+  margin-top:26px;font-size:19px;font-weight:500;
+  color:var(--iron);line-height:1.7;max-width:52ch;
+}
+.origin .support{
+  margin-top:18px;font-size:16.5px;color:var(--body);max-width:54ch;
+}
+.origin-link{
+  display:inline-block;margin-top:30px;
+  font-size:15px;font-weight:600;color:var(--accent);
+  border-bottom:1px solid transparent;
+  transition:border-color .25s ease;
+}
+.origin-link:hover{border-bottom-color:var(--accent)}
+
+/* ---------- Two audiences ---------- */
+.audiences{background:var(--off);padding:40px 0 104px}
+.audience-row{
+  display:grid;grid-template-columns:5fr 7fr;
+  gap:64px;padding:56px 0;
+  border-top:1px solid var(--hairline);
+}
+.audience-row:last-child{border-bottom:1px solid var(--hairline)}
+.audience-label{
+  font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px;
+}
+.audience-row h3{
+  font-family:var(--font-display);font-weight:400;
+  color:var(--ink);font-size:clamp(26px, 2.4vw, 34px);
+  line-height:1.2;text-wrap:balance;max-width:16ch;
+}
+.audience-row p{
+  font-size:16.5px;max-width:54ch;
+}
+.audience-link{
+  display:inline-block;margin-top:22px;
+  font-size:15px;font-weight:600;color:var(--accent);
+}
+.audience-link:hover .arrow{transform:translateX(4px)}
+
+/* ---------- Credibility ---------- */
+.credibility{
+  padding:96px 0;background:var(--white);
+  border-top:1px solid var(--hairline);
+  border-bottom:1px solid var(--hairline);
+}
+.credibility-inner{max-width:920px;margin:0 auto;text-align:center}
+.credibility .label{
+  font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--iron);margin-bottom:26px;
+}
+.credibility p{
+  font-family:var(--font-display);font-weight:400;
+  font-size:clamp(20px, 2vw, 25px);line-height:1.65;
+  color:var(--iron);max-width:40em;margin:0 auto;
+}
+
+/* ---------- CTA band ---------- */
+.cta-band{background:var(--iron);padding:120px 0}
+.cta-inner{max-width:720px;margin:0 auto;text-align:center}
+.cta-band .eyebrow{
+  color:rgba(255,255,255,.72);margin-bottom:22px;
+}
+.cta-band h2{
+  color:#fff;font-size:clamp(34px, 4.4vw, 58px);
+  font-family:var(--font-display);font-weight:400;line-height:1.12;
+  text-wrap:balance;
+}
+.cta-band h2 em{font-style:italic;color:#fff}
+.cta-band .band-body{
+  margin:26px auto 0;font-size:17px;color:#D9DBDE;
+  max-width:48ch;
+}
+.btn-white{
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-top:40px;background:#fff;color:var(--ink);
+  font-size:15px;font-weight:600;
+  padding:15px 30px;border-radius:999px;
+  border:1px solid #fff;
+  transition:transform .25s ease, box-shadow .25s ease, color .25s ease;
+}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(0,0,0,.25);color:var(--accent)}
+.btn-white:active{transform:translateY(0)}
+
+/* ---------- Newsletter ---------- */
+.newsletter{padding:112px 0;background:var(--white)}
+.news-grid{
+  display:grid;grid-template-columns:3fr 2fr;
+  gap:72px;align-items:center;
+}
+.newsletter h2{font-size:clamp(30px, 3vw, 44px)}
+.newsletter .news-body{margin-top:20px;font-size:16.5px;max-width:48ch}
+.signup{margin-top:34px;display:flex;gap:12px;max-width:520px}
+.signup input{
+  flex:1;min-width:0;
+  font-family:var(--font-body);font-size:15px;color:var(--ink);
+  padding:14px 18px;border-radius:var(--radius-input);
+  border:1px solid var(--hairline);background:var(--white);
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+.signup input:focus{
+  outline:none;border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(46,27,61,.12);
+}
+.signup input::placeholder{color:#9A9EA6}
+.signup button{
+  font-family:var(--font-body);font-size:14px;font-weight:600;color:#fff;
+  background:var(--accent);border:1px solid var(--accent);
+  padding:0 24px;border-radius:999px;cursor:pointer;white-space:nowrap;
+  transition:background .25s ease, transform .25s ease;
+}
+.signup button:hover{background:#1F1229;transform:translateY(-1px)}
+.form-note{margin-top:14px;font-size:14px;min-height:1.4em}
+.form-note.ok{color:#2E6B3E}
+.form-note.err{color:#A53A2E}
+.news-media{
+  border-radius:var(--radius-img);
+  border:1px solid var(--hairline);
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;background:var(--off);
+}
+.news-media img{
+  width:100%;height:100%;
+  aspect-ratio:4/5;object-fit:cover;
+}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--off);border-top:1px solid var(--hairline)}
+.footer-grid{
+  display:grid;grid-template-columns:4fr 2fr 2fr 4fr;
+  gap:40px;padding:76px 0 56px;
+}
+.footer-wordmark{
+  font-family:var(--font-display);font-size:26px;font-weight:400;color:var(--ink);
+}
+.footer-tagline{margin-top:14px;font-size:14.5px;max-width:28ch}
+.footer-col h4{
+  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--iron);margin-bottom:18px;
+}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul a{font-size:14.5px;color:var(--body);transition:color .25s ease}
+.footer-col ul a:hover{color:var(--accent)}
+.footer-mini{display:flex;gap:8px;max-width:320px}
+.footer-mini input{
+  flex:1;min-width:0;font-family:var(--font-body);font-size:13.5px;color:var(--ink);
+  padding:11px 14px;border-radius:var(--radius-input);
+  border:1px solid var(--hairline);background:var(--white);
+}
+.footer-mini input:focus{outline:none;border-color:var(--accent)}
+.footer-mini button{
+  font-family:var(--font-body);font-size:13px;font-weight:600;color:#fff;
+  background:var(--accent);border:1px solid var(--accent);
+  padding:0 16px;border-radius:999px;cursor:pointer;white-space:nowrap;
+  transition:background .25s ease;
+}
+.footer-mini button:hover{background:#1F1229}
+.footer-bottom{
+  border-top:1px solid var(--hairline);
+  padding:24px 0 28px;
+  display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  font-size:13.5px;color:var(--body);
+}
+
+/* ---------- Motion ---------- */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important;animation:none!important}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1024px){
+  .container,.header-inner{padding:0 32px}
+  .site-nav{display:none}
+  .menu-toggle{display:flex}
+  .mobile-nav{padding-left:32px;padding-right:32px}
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero{padding:72px 0 88px}
+  .hero-media{max-width:520px}
+  .hero h1{font-size:clamp(38px, 7vw, 52px)}
+  .origin-grid{grid-template-columns:1fr;gap:44px}
+  .origin-media{max-width:640px}
+  .audience-row{grid-template-columns:1fr;gap:22px;padding:44px 0}
+  .news-grid{grid-template-columns:1fr;gap:44px}
+  .news-media{max-width:420px}
+  .footer-grid{grid-template-columns:1fr 1fr;row-gap:40px}
+}
+@media (max-width:560px){
+  .container,.header-inner{padding:0 20px}
+  .mobile-nav{padding-left:20px;padding-right:20px}
+  .journey,.origin,.newsletter{padding:80px 0}
+  .cta-band{padding:88px 0}
+  .hero{padding:56px 0 72px}
+  .signup{flex-direction:column}
+  .signup button{padding:14px 24px;width:100%}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#top" aria-label="Radhika Seshan, home">Radhika Seshan</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#speaking">Speaking &amp; Advisory</a>
+      <a href="#writing">Blog</a>
+      <a href="#writing">Media &amp; Press</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#consultation">Book a free consultation</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#top">Home</a>
+    <a href="#coaching">Coaching</a>
+    <a href="#speaking">Speaking &amp; Advisory</a>
+    <a href="#writing">Blog</a>
+    <a href="#writing">Media &amp; Press</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-cta" href="#consultation">Book a free consultation</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ 1. HERO (Corvairo hero: eyebrow, two line serif headline, sub, CTA pair, media card right) ============ -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Radhika Seshan</p>
+        <h1 class="reveal" style="transition-delay:.05s">
+          You already have what it takes.<br>
+          What you need is a strategy for the life you <em>dream</em> of.
+        </h1>
+        <p class="hero-sub reveal" style="transition-delay:.1s">A real world roadmap for career development, built on striving and positive action.</p>
+        <div class="hero-actions reveal" style="transition-delay:.15s">
+          <a class="btn-primary" href="#consultation">Book a free consultation</a>
+          <div class="hero-wayfinding">
+            <a href="#coaching">Coaching</a>
+            <span class="dot" aria-hidden="true">·</span>
+            <a href="#speaking">Speaking &amp; Advisory</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media reveal" style="transition-delay:.1s">
+        <!-- Stand-in photograph. Final asset: Radhika speaking context, 4:5 crop, 1200 x 1500 px -->
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=960&h=1200&q=80&auto=format&fit=crop" alt="Stand-in photograph of a woman speaking at a conference. Replace with Radhika Seshan speaking context photograph." width="960" height="1200">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. OWN YOUR JOURNEY (Corvairo about: centered statement) ============ -->
+  <section class="journey" id="journey">
+    <div class="container journey-inner">
+      <div class="journey-rule reveal" aria-hidden="true"></div>
+      <h2 class="display reveal">Own your journey.</h2>
+      <p class="reveal" style="transition-delay:.05s">Striving is trying without being attached to guaranteed results. It is playing the long game against a five year vision, not the next promotion.</p>
+      <p class="reveal" style="transition-delay:.1s">Positive action means not sweating what you cannot change. It is having a real world roadmap, and taking action on it.</p>
+      <p class="reveal" style="transition-delay:.15s">Every step you take is one you own, in what you do and how you feel about it. That ownership is what creates agency. You know you can do it, or you know you can learn it. Either way, it is yours.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. ORIGIN STORY (Corvairo split proof section) ============ -->
+  <section class="origin" id="about">
+    <div class="container origin-grid">
+      <div class="origin-media reveal">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1100&q=80&auto=format&fit=crop" alt="A woman speaking at a conference with an audience. Editorial image for the origin story section." width="1100" height="733">
+      </div>
+      <div class="origin-copy">
+        <p class="eyebrow reveal">The distinction</p>
+        <h2 class="display reveal" style="transition-delay:.05s">Career development, not professional development.</h2>
+        <p class="lead reveal" style="transition-delay:.1s">A career is what you choose to do. Professional development is what you choose to learn.</p>
+        <p class="support reveal" style="transition-delay:.15s">Radhika built hers by doing both. A PhD economist who moved into high tech product management, she was one of ten economists in a company of a hundred thousand technologists. What she has to offer is not a credential. It is proof that a career gets built through applied learning and deliberate navigation, not the degree alone.</p>
+        <a class="origin-link reveal" style="transition-delay:.2s" href="#about">Read her full story <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. TWO AUDIENCES (Corvairo services: title left, description right rows) ============ -->
+  <section class="audiences" id="coaching">
+    <div class="container">
+      <div class="audience-row reveal">
+        <div>
+          <p class="audience-label">Coaching</p>
+          <h3>For the professional ready to move.</h3>
+        </div>
+        <div>
+          <p>Mid career women moving up, moving sideways, or changing course entirely. Indian professionals navigating the US workplace: newly arrived, spouses relocating, or working for Western companies from India. The part no course teaches is the cultural bridge: reading the room, and knowing what worked at home will not always work here.</p>
+          <a class="audience-link" href="#coaching">Explore coaching <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="audience-row reveal" id="speaking">
+        <div>
+          <p class="audience-label">Speaking &amp; Advisory</p>
+          <h3>For the organization planning ahead.</h3>
+        </div>
+        <div>
+          <p>Continuing education divisions in universities and colleges. AI startups entering higher education. Mid sized companies scoping what their workforce needs to learn next.</p>
+          <a class="audience-link" href="#speaking">Explore speaking and advisory <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. CREDIBILITY (type set names, no logos) ============ -->
+  <section class="credibility">
+    <div class="container credibility-inner">
+      <p class="label reveal">Background</p>
+      <p class="reveal" style="transition-delay:.05s">PhD in economics. Product management at Bell Labs and Lucent Technologies. Dean roles at Northeastern University and UCLA Extension. Currently a dean at a public university in Minnesota.</p>
+    </div>
+  </section>
+
+  <!-- ============ 6. CTA BAND (the one dark band on the page) ============ -->
+  <section class="cta-band" id="consultation">
+    <div class="container cta-inner">
+      <p class="eyebrow reveal">A free conversation</p>
+      <h2 class="reveal" style="transition-delay:.05s">Let's sit down and dream <em>together</em>.</h2>
+      <p class="band-body reveal" style="transition-delay:.1s">A free 30 minute conversation. No pitch, just a look at where you are and where you want to go.</p>
+      <a class="btn-white reveal" style="transition-delay:.15s" href="#contact">Book a free consultation</a>
+    </div>
+  </section>
+
+  <!-- ============ 7. LATEST WRITING + NEWSLETTER (launch state: capture only) ============ -->
+  <!-- Phase two: swap the signup for a three post card row once the blog has content -->
+  <section class="newsletter" id="writing">
+    <div class="container news-grid">
+      <div>
+        <h2 class="display reveal">New thinking, when there is something worth saying.</h2>
+        <p class="news-body reveal" style="transition-delay:.05s">Notes arrive occasionally, only when there is something worth saying. No schedule, no noise.</p>
+        <form class="signup reveal" style="transition-delay:.1s" novalidate>
+          <label class="skip-link" for="newsletterEmail" style="position:absolute;left:-9999px">Email address</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" autocomplete="email" required>
+          <button type="submit">Get occasional notes</button>
+        </form>
+        <p class="form-note" aria-live="polite"></p>
+      </div>
+      <div class="news-media reveal" style="transition-delay:.1s">
+        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=1000&q=80&auto=format&fit=crop" alt="A quiet stack of books." width="800" height="1000">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-wordmark">Radhika Seshan</p>
+        <p class="footer-tagline">Career development, coaching, speaking, advisory.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="#speaking">Speaking &amp; Advisory</a></li>
+          <li><a href="#writing">Blog</a></li>
+          <li><a href="#writing">Media &amp; Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@radhikaseshan.com">hello@radhikaseshan.com</a></li>
+          <li><a href="https://www.linkedin.com/in/radhikaseshan" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Occasional notes</h4>
+        <form class="footer-mini signup" novalidate>
+          <label class="skip-link" for="footerEmail" style="position:absolute;left:-9999px">Email address</label>
+          <input id="footerEmail" type="email" placeholder="Email address" autocomplete="email" required>
+          <button type="submit">Get occasional notes</button>
+        </form>
+        <p class="form-note" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Radhika Seshan</span>
+      <span>This is a personal site and is not affiliated with or endorsed by any institution.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Mobile menu */
+  var toggle = document.getElementById("menuToggle");
+  var nav = document.getElementById("mobileNav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function(){
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  /* Scroll reveal: slow fades and small offsets */
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var reveals = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)) {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+
+  /* Newsletter forms: gentle success / error states */
+  function bindForm(form) {
+    if (!form) return;
+    var input = form.querySelector('input[type="email"]');
+    var note = form.parentElement.querySelector(".form-note");
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var value = (input.value || "").trim();
+      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      if (!valid) {
+        note.className = "form-note err";
+        note.textContent = "Please add your email address.";
+        input.focus();
+        return;
+      }
+      note.className = "form-note ok";
+      note.textContent = "Thank you. Notes arrive only when there is something worth saying.";
+      form.reset();
+    });
+  }
+  document.querySelectorAll("form.signup").forEach(bindForm);
+})();
+</script>
+</body>
+</html>
