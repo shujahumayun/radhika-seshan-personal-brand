@@ -66,7 +66,7 @@ All three images are real, verified Unsplash URLs. **None of them are Radhika.**
 
 | Placement | Current image (source) | Final asset needed |
 |---|---|---|
-| Hero, 4:5 card, right column | Professional woman, neutral tones — `photo-1573496359142-b8d87734a5a2` | Radhika speaking context photo, 4:5 crop, 1200 × 1500 px |
+| Hero, 4:5 card, right column | Mid career professional, neutral gray tones — `photo-1573497019940-1c28c88b4f3e` (swapped 2026-08-10, the previous stand-in had a strong orange backdrop and orange is a ruled out colour) | Radhika speaking context photo, 4:5 crop, 1200 × 1500 px |
 | Origin story, 3:2, left of text | Woman speaking at a conference — `photo-1531482615713-2afd69097998` | Optional editorial image (conference, lecture) |
 | Newsletter, 4:5, right column | Stack of books — `photo-1456513080510-7bf3a84b82f8` | Optional editorial image |
 
