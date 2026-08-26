@@ -62,11 +62,13 @@ The client reference screenshot was reviewed section by section. Everything that
 
 ## 5. Imagery (Unsplash)
 
-All three images are real, verified Unsplash URLs. **None of them are Radhika.** They are stand-ins for layout, crop, and tone.
+**Updated 2026-08-26:** the hero is now Radhika's own portrait (`assets/radhika-hero.jpg`, client supplied, cropped to 4:5 from a 1132 x 1317 original). The remaining two images are real, verified Unsplash URLs and are **not** Radhika. They stay as stand-ins for layout, crop, and tone.
+
+A speaking or teaching context photograph is still the preferred hero asset per the build brief. This portrait is the fallback until that arrives.
 
 | Placement | Current image (source) | Final asset needed |
 |---|---|---|
-| Hero, 4:5 card, right column | Mid career professional, neutral gray tones — `photo-1573497019940-1c28c88b4f3e` (swapped 2026-08-10, the previous stand-in had a strong orange backdrop and orange is a ruled out colour) | Radhika speaking context photo, 4:5 crop, 1200 × 1500 px |
+| Hero, 4:5 card, right column | **Radhika's own portrait** — `assets/radhika-hero.jpg`, navy blazer against a pale colonnade, client supplied 2026-08-26 | Swap for a speaking context photo if she sends one, same 4:5 crop |
 | Origin story, 3:2, left of text | Woman speaking at a conference — `photo-1531482615713-2afd69097998` | Optional editorial image (conference, lecture) |
 | Newsletter, 4:5, right column | Stack of books — `photo-1456513080510-7bf3a84b82f8` | Optional editorial image |
 
