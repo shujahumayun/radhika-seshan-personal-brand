@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhika Seshan · Career planning, coaching, speaking and advisory</title>
+<meta name="description" content="A real world roadmap for career development. Career planning, coaching, speaking and advisory with Radhika Seshan.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235B2A46'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23FFFFFF' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Radhika Seshan · Homepage · Consolidated concept (v2)
+   Base: Concept One's editorial, person first layout.
+   Brought in from Concept Two: numbered 01/02/03 blocks,
+     the photo plus tagline plus side copy hero, card rows.
+   Reconciled from the 2026-08-26 review call and Kumar's
+     forwarded analysis (see Projects direction-v2.md).
+   Palette: iron gray + true neutral grays, plum on CTAs only.
+   Type: Fraunces (display) + Inter (body). No italics. No underlines.
+   ============================================================ */
+:root{
+  --ink:#141414;
+  --iron:#3A3D42;
+  --body:#585C63;
+  --soft:#7A7E85;
+  --hairline:#E7E7E9;
+  --mist:#F3F3F4;      /* true neutral section tint, corrects the old brownish cast */
+  --paper:#FCFCFB;
+  --white:#FFFFFF;
+  --plum:#5B2A46;      /* CTAs only, used sparingly */
+  --plum-press:#4A2239;
+  --font-display:'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --container:1180px;
+  --radius-img:16px;
+  --radius-input:12px;
+  --shadow-soft:0 24px 64px rgba(20,20,20,.09);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  color:var(--body);
+  background:var(--white);
+  font-size:16.5px;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+li{list-style:none}
+strong{font-weight:600;color:var(--iron)}
+
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--plum);color:#fff;
+  padding:10px 18px;border-radius:0 0 10px 0;font-size:14px;
+}
+.skip-link:focus{left:0}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 48px}
+
+.display{
+  font-family:var(--font-display);font-weight:400;
+  color:var(--iron);
+  line-height:1.12;letter-spacing:-.005em;
+  font-optical-sizing:auto;
+  text-wrap:balance;
+}
+.eyebrow{
+  font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--plum);
+}
+p{max-width:64ch}
+.arrow{display:inline-block;transition:transform .25s ease}
+a.text-link{
+  display:inline-block;font-weight:600;color:var(--plum);font-size:15px;
+}
+a.text-link:hover{color:var(--plum-press)}
+a.text-link:hover .arrow{transform:translateX(4px)}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.92);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hairline);
+}
+.header-inner{
+  max-width:var(--container);margin:0 auto;padding:0 48px;
+  height:74px;display:flex;align-items:center;justify-content:space-between;gap:32px;
+}
+.wordmark{
+  font-family:var(--font-display);
+  font-size:21px;font-weight:500;color:var(--ink);
+  letter-spacing:.005em;white-space:nowrap;
+}
+.wordmark .dot{
+  display:inline-block;width:5px;height:5px;border-radius:50%;
+  background:var(--plum);margin-left:5px;vertical-align:middle;
+}
+.site-nav{display:flex;align-items:center;gap:30px}
+.site-nav a{
+  font-size:14px;font-weight:500;color:var(--iron);
+  transition:color .25s ease;
+}
+.site-nav a:hover{color:var(--plum)}
+.site-nav a.nav-cta{
+  font-size:14px;font-weight:600;color:#fff;background:var(--plum);
+  padding:10px 20px;border-radius:999px;
+  border:1px solid var(--plum);
+  transition:background .25s ease, transform .25s ease;
+  white-space:nowrap;
+}
+.nav-cta:hover{background:var(--plum-press);transform:translateY(-1px)}
+.menu-toggle{
+  display:none;background:none;border:none;cursor:pointer;
+  width:44px;height:44px;border-radius:8px;
+  align-items:center;justify-content:center;
+}
+.menu-toggle span{
+  display:block;width:20px;height:2px;background:var(--ink);
+  margin:2.5px auto;transition:transform .3s ease, opacity .3s ease;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{
+  display:none;background:var(--white);
+  border-top:1px solid var(--hairline);
+  padding:16px 48px 24px;
+}
+.mobile-nav a{
+  display:block;padding:12px 0;font-size:16px;font-weight:500;
+  color:var(--iron);border-bottom:1px solid var(--hairline);
+}
+.mobile-nav a:last-child{border-bottom:none}
+.mobile-nav .mobile-cta{
+  margin-top:14px;text-align:center;color:#fff;background:var(--plum);
+  border-radius:999px;border:1px solid var(--plum);font-weight:600;
+}
+.mobile-nav.open{display:block}
+
+/* ---------- Buttons ---------- */
+.btn-primary{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--plum);color:#fff;
+  font-size:15px;font-weight:600;
+  padding:15px 30px;border-radius:999px;
+  border:1px solid var(--plum);
+  transition:background .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.btn-primary:hover{background:var(--plum-press);transform:translateY(-2px);box-shadow:0 12px 28px rgba(91,42,70,.22)}
+.btn-primary:active{transform:translateY(0)}
+.btn-white{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:#fff;color:var(--plum);
+  font-size:15px;font-weight:600;
+  padding:15px 30px;border-radius:999px;border:1px solid #fff;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(0,0,0,.22)}
+
+/* ---------- Hero ---------- */
+.hero{padding:92px 0 96px;background:var(--paper)}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;
+  gap:64px;align-items:center;
+}
+.hero h1{
+  font-family:var(--font-display);font-weight:500;color:var(--ink);
+  font-size:clamp(44px, 5.4vw, 74px);
+  line-height:1.02;letter-spacing:-.01em;
+}
+.hero .tagline{
+  margin-top:26px;
+  font-family:var(--font-display);font-weight:400;
+  color:var(--iron);
+  font-size:clamp(22px, 2.5vw, 31px);
+  line-height:1.28;max-width:20ch;
+}
+.hero .hero-sub{
+  margin-top:22px;font-size:17px;line-height:1.7;
+  color:var(--body);max-width:44ch;
+}
+.hero-actions{
+  margin-top:36px;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+}
+.hero-question{
+  font-family:var(--font-display);font-weight:500;
+  color:var(--ink);font-size:19px;
+}
+.hero-media{
+  border-radius:var(--radius-img);
+  border:1px solid var(--hairline);
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;background:var(--mist);
+}
+.hero-media img{
+  width:100%;height:auto;
+  aspect-ratio:4/5;object-fit:cover;
+}
+
+/* ---------- Credibility line ---------- */
+.credline{
+  padding:30px 0;background:var(--white);
+  border-bottom:1px solid var(--hairline);
+}
+.credline .container{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;
+  text-align:center;
+}
+.credline span{
+  font-family:var(--font-display);font-weight:400;
+  color:var(--iron);font-size:clamp(16px, 1.5vw, 19px);
+}
+.credline .sep{color:var(--hairline);font-weight:400}
+
+/* ---------- Own your journey ---------- */
+.journey{background:var(--mist);padding:104px 0}
+.journey-head{max-width:660px;margin:0 auto 56px;text-align:center}
+.journey-rule{width:44px;height:3px;background:var(--plum);margin:0 auto 26px}
+.journey-head h2{font-size:clamp(34px, 3.8vw, 50px)}
+.journey-head p{margin:22px auto 0;font-size:17px;line-height:1.8;max-width:60ch}
+.journey-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--hairline);border-radius:var(--radius-img);
+  overflow:hidden;background:var(--white);
+}
+.journey-cell{padding:40px 34px;display:flex;flex-direction:column;gap:16px}
+.journey-cell + .journey-cell{border-left:1px solid var(--hairline)}
+.journey-num{
+  font-family:var(--font-display);font-weight:500;
+  font-size:15px;color:var(--plum);letter-spacing:.02em;
+}
+.journey-cell h3{
+  font-family:var(--font-display);font-weight:500;color:var(--ink);
+  font-size:22px;line-height:1.22;
+}
+.journey-cell p{font-size:15.5px;color:var(--body)}
+.journey-close{
+  max-width:640px;margin:44px auto 0;text-align:center;
+  font-family:var(--font-display);font-weight:400;
+  color:var(--iron);font-size:clamp(19px, 2vw, 24px);line-height:1.5;
+}
+
+/* ---------- Career planning ---------- */
+.planning{padding:104px 0;background:var(--white)}
+.planning-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:72px;align-items:center;
+}
+.planning-copy .eyebrow{margin-bottom:20px}
+.planning h2{font-size:clamp(30px, 3.2vw, 44px);max-width:16ch}
+.planning .lead{
+  margin-top:24px;font-size:18px;color:var(--iron);line-height:1.7;max-width:52ch;
+}
+.planning .support{margin-top:18px;font-size:16px;color:var(--body);max-width:54ch}
+.planning .text-link{margin-top:26px}
+.planning-figure{
+  border-radius:var(--radius-img);border:1px solid var(--hairline);
+  background:var(--mist);aspect-ratio:3/4;
+  display:flex;align-items:center;justify-content:center;padding:32px;
+}
+.figure-note{
+  text-align:center;color:var(--soft);font-size:14px;line-height:1.6;max-width:26ch;
+}
+.figure-note b{display:block;color:var(--iron);font-weight:600;margin-bottom:6px;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+
+/* ---------- Who she helps ---------- */
+.helps{background:var(--mist);padding:104px 0}
+.helps-head{max-width:620px;margin:0 auto 54px;text-align:center}
+.helps-head h2{font-size:clamp(32px, 3.6vw, 48px)}
+.helps-head p{margin:20px auto 0;font-size:16.5px;max-width:52ch}
+.helps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.help-card{
+  background:var(--white);border:1px solid var(--hairline);
+  border-radius:var(--radius-img);padding:36px 30px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.help-label{
+  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--plum);
+}
+.help-card h3{
+  font-family:var(--font-display);font-weight:500;color:var(--ink);
+  font-size:21px;line-height:1.25;
+}
+.help-card p{font-size:15px;color:var(--body);flex:1}
+.help-card .text-link{margin-top:6px}
+
+/* ---------- Experience that informs the work ---------- */
+.proof{padding:104px 0;background:var(--white)}
+.proof-head{max-width:640px;margin:0 auto 54px;text-align:center}
+.proof-head h2{font-size:clamp(30px, 3.4vw, 44px)}
+.proof-head p{margin:20px auto 0;font-size:16.5px;max-width:54ch}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.proof-item{border-top:2px solid var(--iron);padding-top:24px}
+.proof-item h3{
+  font-family:var(--font-display);font-weight:500;color:var(--ink);
+  font-size:20px;line-height:1.25;margin-bottom:12px;
+}
+.proof-item p{font-size:15px;color:var(--body)}
+
+/* ---------- Testimonials (placeholder) ---------- */
+.voices{background:var(--mist);padding:96px 0}
+.voices-inner{
+  max-width:760px;margin:0 auto;text-align:center;
+  border:1px solid var(--hairline);border-radius:var(--radius-img);
+  background:var(--white);padding:56px 44px;
+}
+.voices-inner .eyebrow{margin-bottom:18px}
+.voices-inner h2{font-size:clamp(26px, 2.8vw, 36px)}
+.voices-inner p{margin:18px auto 0;font-size:16px;max-width:52ch}
+.voices-tag{
+  display:inline-block;margin-top:24px;
+  font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--soft);border:1px solid var(--hairline);
+  padding:7px 14px;border-radius:999px;
+}
+
+/* ---------- CTA band ---------- */
+.cta-band{background:var(--iron);padding:116px 0}
+.cta-inner{max-width:680px;margin:0 auto;text-align:center}
+.cta-band .eyebrow{color:rgba(255,255,255,.7);margin-bottom:20px}
+.cta-band h2{
+  color:#fff;font-size:clamp(38px, 4.6vw, 60px);
+  font-family:var(--font-display);font-weight:500;line-height:1.05;
+}
+.cta-band .band-body{
+  margin:24px auto 0;font-size:17px;color:#D8DADD;max-width:46ch;
+}
+.cta-band .btn-white{margin-top:36px}
+
+/* ---------- Newsletter ---------- */
+.newsletter{padding:104px 0;background:var(--white)}
+.news-grid{
+  display:grid;grid-template-columns:3fr 2fr;
+  gap:64px;align-items:center;
+}
+.newsletter h2{font-size:clamp(30px, 3vw, 42px);max-width:18ch}
+.newsletter .news-body{margin-top:18px;font-size:16.5px;max-width:46ch}
+.signup{margin-top:30px;display:flex;gap:12px;max-width:500px}
+.signup input{
+  flex:1;min-width:0;
+  font-family:var(--font-body);font-size:15px;color:var(--ink);
+  padding:14px 18px;border-radius:var(--radius-input);
+  border:1px solid var(--hairline);background:var(--white);
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+.signup input:focus{
+  outline:none;border-color:var(--plum);
+  box-shadow:0 0 0 3px rgba(91,42,70,.12);
+}
+.signup input::placeholder{color:#9A9EA6}
+.signup button{
+  font-family:var(--font-body);font-size:14px;font-weight:600;color:#fff;
+  background:var(--plum);border:1px solid var(--plum);
+  padding:0 24px;border-radius:999px;cursor:pointer;white-space:nowrap;
+  transition:background .25s ease, transform .25s ease;
+}
+.signup button:hover{background:var(--plum-press);transform:translateY(-1px)}
+.form-note{margin-top:14px;font-size:14px;min-height:1.4em}
+.form-note.ok{color:#2E6B3E}
+.form-note.err{color:#A53A2E}
+.news-figure{
+  border-radius:var(--radius-img);border:1px solid var(--hairline);
+  background:var(--mist);aspect-ratio:4/5;
+  display:flex;align-items:center;justify-content:center;padding:28px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--mist);border-top:1px solid var(--hairline)}
+.footer-grid{
+  display:grid;grid-template-columns:4fr 2fr 3fr;
+  gap:40px;padding:72px 0 48px;
+}
+.footer-wordmark{
+  font-family:var(--font-display);font-size:24px;font-weight:500;color:var(--ink);
+}
+.footer-tagline{margin-top:12px;font-size:14.5px;max-width:30ch}
+.footer-col h4{
+  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--iron);margin-bottom:16px;
+}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul a{font-size:14.5px;color:var(--body);transition:color .25s ease}
+.footer-col ul a:hover{color:var(--plum)}
+.footer-bottom{
+  border-top:1px solid var(--hairline);
+  padding:22px 0 26px;
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:13px;color:var(--soft);
+}
+
+/* ---------- Motion ---------- */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important;animation:none!important}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1024px){
+  .container,.header-inner{padding:0 32px}
+  .site-nav{display:none}
+  .menu-toggle{display:flex}
+  .mobile-nav{padding-left:32px;padding-right:32px}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero{padding:64px 0 76px}
+  .hero-media{max-width:460px}
+  .journey-grid{grid-template-columns:1fr}
+  .journey-cell + .journey-cell{border-left:0;border-top:1px solid var(--hairline)}
+  .planning-grid{grid-template-columns:1fr;gap:44px}
+  .planning-figure{max-width:420px;aspect-ratio:4/3}
+  .helps-grid{grid-template-columns:1fr;gap:20px}
+  .proof-grid{grid-template-columns:1fr;gap:34px}
+  .news-grid{grid-template-columns:1fr;gap:40px}
+  .news-figure{max-width:360px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .container,.header-inner{padding:0 20px}
+  .mobile-nav{padding-left:20px;padding-right:20px}
+  .journey,.planning,.helps,.proof,.newsletter{padding:72px 0}
+  .cta-band{padding:84px 0}
+  .hero{padding:48px 0 64px}
+  .journey-cell{padding:32px 26px}
+  .signup{flex-direction:column}
+  .signup button{padding:14px 24px;width:100%}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#top" aria-label="Radhika Seshan, home">Radhika Seshan<span class="dot" aria-hidden="true"></span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#consultation">Book a free consultation</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#top">Home</a>
+    <a href="#offerings">Offerings</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-cta" href="#consultation">Book a free consultation</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="reveal">Radhika Seshan</h1>
+        <p class="tagline reveal" style="transition-delay:.05s">A real world roadmap for career development.</p>
+        <p class="hero-sub reveal" style="transition-delay:.1s">You already have what it takes. The next step is a strategy for what comes next, and someone to build it with you.</p>
+        <div class="hero-actions reveal" style="transition-delay:.15s">
+          <span class="hero-question">What's your plan?</span>
+          <a class="btn-primary" href="#consultation">Book a free consultation</a>
+        </div>
+      </div>
+      <div class="hero-media reveal" style="transition-delay:.1s">
+        <!-- Client supplied portrait, received 2026-08-26, 4:5 crop. A speaking or facilitating photograph is the preferred final asset. -->
+        <img src="assets/radhika-hero.jpg" alt="Radhika Seshan, photographed in front of a colonnade." width="1054" height="1317" loading="eager" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. CREDIBILITY LINE (titles only, no employers, no numbers) ============ -->
+  <section class="credline" id="credentials-strip">
+    <div class="container">
+      <span>PhD in economics</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>Vice President of Product Management</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>Dean at multiple universities</span>
+    </div>
+  </section>
+
+  <!-- ============ 3. OWN YOUR JOURNEY (numbered blocks from Concept Two, connected) ============ -->
+  <section class="journey" id="journey">
+    <div class="container">
+      <div class="journey-head reveal">
+        <div class="journey-rule" aria-hidden="true"></div>
+        <h2 class="display">Own your journey.</h2>
+        <p>Owning your journey means becoming an agent for yourself. You go looking for the insights, the support, the options and the strategies, instead of waiting for them to arrive.</p>
+      </div>
+      <div class="journey-grid reveal" style="transition-delay:.05s">
+        <div class="journey-cell">
+          <span class="journey-num">01 / Striving</span>
+          <h3>Trying, without being attached to a guaranteed result.</h3>
+          <p>Playing the long game against a five year picture, not the next promotion.</p>
+        </div>
+        <div class="journey-cell">
+          <span class="journey-num">02 / Positive action</span>
+          <h3>Not spending energy on what you cannot change.</h3>
+          <p>Deciding what to do next, and doing it. Then looking again.</p>
+        </div>
+        <div class="journey-cell">
+          <span class="journey-num">03 / A real world roadmap</span>
+          <h3>We build it together, step by step.</h3>
+          <p>After each step we check whether it took you where you needed to go, and we adjust.</p>
+        </div>
+      </div>
+      <p class="journey-close reveal" style="transition-delay:.1s">The roadmap is what we develop together. The journey stays yours.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. CAREER PLANNING, NOT JUST PROFESSIONAL DEVELOPMENT ============ -->
+  <section class="planning" id="about">
+    <div class="container planning-grid">
+      <div class="planning-copy">
+        <p class="eyebrow reveal">The distinction</p>
+        <h2 class="display reveal" style="transition-delay:.05s">Career planning, not just professional development.</h2>
+        <p class="lead reveal" style="transition-delay:.1s">Professional development is the certificates: project management, analytics, the skills you choose to learn. Radhika values those. She used them. Career planning is the layer above: who you know, what you know, and what you need to learn next.</p>
+        <p class="support reveal" style="transition-delay:.15s">At Bell Labs she moved from the economic analysis group into a technology group knowing no technology. The company sent her to programming training on campus, then to a company on the West Coast for two weeks to learn object oriented programming. It changed her work. Intentional planning, sometimes a little serendipity, the right people around you, and training exactly when you need it.</p>
+        <a class="text-link reveal" style="transition-delay:.2s" href="#credentials">Read her full story <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="planning-figure reveal" style="transition-delay:.1s">
+        <p class="figure-note"><b>Photograph</b>Radhika teaching or facilitating a session. Client asset pending.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. WHO SHE HELPS (three cards, side by side) ============ -->
+  <section class="helps" id="offerings">
+    <div class="container">
+      <div class="helps-head reveal">
+        <h2 class="display">Who she helps.</h2>
+        <p>Three ways to work with Radhika: one person at a time, one group at a time, or one organization at a time.</p>
+      </div>
+      <div class="helps-grid reveal" style="transition-delay:.05s">
+        <article class="help-card">
+          <span class="help-label">Coaching</span>
+          <h3>For the professional ready to take the next step.</h3>
+          <p>Mid career professionals, women among them, moving up, moving sideways, or changing course. People who moved to the US for work, and people who have been here all along and share the same questions. The part no course teaches is reading the room, and knowing that what worked before will not always work now.</p>
+          <a class="text-link" href="#offerings">Explore coaching <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="help-card">
+          <span class="help-label">Cohorts and workshops</span>
+          <h3>For the group learning together.</h3>
+          <p>Women's leadership cohorts, alumni communities, employer sponsored development programs. Guided career strategy in a room of peers, built around the same roadmap.</p>
+          <a class="text-link" href="#offerings">Explore group programs <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="help-card">
+          <span class="help-label">Speaking and advisory</span>
+          <h3>For the organization preparing for what comes next.</h3>
+          <p>Continuing education divisions. Ventures bringing AI into higher education. Mid sized companies scoping what their workforce needs to learn next. Radhika reads this the way an economist does: where the strain will show, where the opening is, and what to do now to be ready.</p>
+          <a class="text-link" href="#offerings">Explore speaking and advisory <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. EXPERIENCE THAT INFORMS THE WORK (stories, no metrics) ============ -->
+  <section class="proof" id="credentials">
+    <div class="container">
+      <div class="proof-head reveal">
+        <p class="eyebrow">Experience that informs the work</p>
+        <h2 class="display">Her career is the method, not the biography.</h2>
+        <p>Radhika has repeatedly navigated career, organizational, technological and educational change, and led others through it.</p>
+      </div>
+      <div class="proof-grid reveal" style="transition-delay:.05s">
+        <div class="proof-item">
+          <h3>Reinventing across sectors</h3>
+          <p>From economics to Bell Labs and global technology leadership, and from technology into senior academic leadership. She has carried experience across industries, roles and working cultures, and knows what the crossing costs.</p>
+        </div>
+        <div class="proof-item">
+          <h3>Developing people and possibilities</h3>
+          <p>Her work with adult and professional learners has focused on what experienced people actually need from education: relevance, flexibility, support, and a clear link between effort and opportunity.</p>
+        </div>
+        <div class="proof-item">
+          <h3>Leading through change</h3>
+          <p>She has led large academic organizations, built new programs, brought faculty and staff together around a change in direction, and kept learning, technology and financial health in view at the same time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. TESTIMONIALS (placeholder, none cleared yet) ============ -->
+  <section class="voices">
+    <div class="container">
+      <div class="voices-inner reveal">
+        <p class="eyebrow">In their words</p>
+        <h2 class="display">What changed for the people she worked with.</h2>
+        <p>This section holds three to five short quotes from people Radhika has advised, coached or led, each one describing what actually changed. Named where permission allows.</p>
+        <span class="voices-tag">Content pending client input</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. CTA BAND (question, the one dark band, plum on the button only) ============ -->
+  <section class="cta-band" id="consultation">
+    <div class="container cta-inner">
+      <p class="eyebrow reveal">A free conversation</p>
+      <h2 class="reveal" style="transition-delay:.05s">What's your plan?</h2>
+      <p class="band-body reveal" style="transition-delay:.1s">A free 30 minute conversation. No pitch. A look at where you are, and where you want to go.</p>
+      <a class="btn-white reveal" style="transition-delay:.15s" href="#contact">Book a free consultation</a>
+    </div>
+  </section>
+
+  <!-- ============ 9. LATEST WRITING + NEWSLETTER (launch state: capture only) ============ -->
+  <!-- Writing moves to Substack in principle (2026-08-26). Pending the Substack audience check, launch with the signup alone; later surface the three latest pieces here. -->
+  <section class="newsletter" id="writing">
+    <div class="container news-grid">
+      <div>
+        <h2 class="display reveal">New thinking, when there is something worth saying.</h2>
+        <p class="news-body reveal" style="transition-delay:.05s">Occasional notes on career planning. No schedule, no noise.</p>
+        <form class="signup reveal" style="transition-delay:.1s" novalidate>
+          <label class="skip-link" for="newsletterEmail" style="position:absolute;left:-9999px">Email address</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" autocomplete="email" required>
+          <button type="submit">Get occasional notes</button>
+        </form>
+        <p class="form-note" aria-live="polite"></p>
+      </div>
+      <div class="news-figure reveal" style="transition-delay:.1s">
+        <p class="figure-note"><b>Optional image</b>A quiet editorial photograph, or leave this column out at launch.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-wordmark">Radhika Seshan</p>
+        <p class="footer-tagline">Career planning, coaching, speaking, advisory.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#offerings">Offerings</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#consultation">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:radhika.seshan@gmail.com">Email Radhika</a></li>
+          <li><a href="#" rel="noopener">LinkedIn</a></li>
+          <li><a href="#writing">Newsletter</a></li>
+        </ul>
+        <p class="footer-tagline" style="margin-top:16px">Contact email and LinkedIn are placeholders until Radhika confirms them.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Radhika Seshan</span>
+      <span>This is a personal site and is not affiliated with or endorsed by any institution.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Mobile menu */
+  var toggle = document.getElementById("menuToggle");
+  var nav = document.getElementById("mobileNav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function(){
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  /* Scroll reveal: slow fades, small offsets */
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var reveals = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)) {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+
+  /* Newsletter form: gentle success / error states */
+  function bindForm(form) {
+    if (!form) return;
+    var input = form.querySelector('input[type="email"]');
+    var note = form.parentElement.querySelector(".form-note");
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var value = (input.value || "").trim();
+      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      if (!valid) {
+        note.className = "form-note err";
+        note.textContent = "Please add your email address.";
+        input.focus();
+        return;
+      }
+      note.className = "form-note ok";
+      note.textContent = "Thank you. Notes arrive only when there is something worth saying.";
+      form.reset();
+    });
+  }
+  document.querySelectorAll("form.signup").forEach(bindForm);
+})();
+</script>
+</body>
+</html>
