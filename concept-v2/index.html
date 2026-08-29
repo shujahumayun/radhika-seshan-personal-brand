@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Radhika Seshan · Career planning, coaching, speaking and advisory</title>
-<meta name="description" content="A real world roadmap for career development. Career planning, coaching, speaking and advisory with Radhika Seshan.">
+<title>Radhika Seshan · Career strategy, coaching and advisory</title>
+<meta name="description" content="Career strategy, coaching and advisory for professionals navigating change, and for organizations preparing people for the future of work.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235B2A46'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23FFFFFF' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +12,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   Radhika Seshan · Homepage · Consolidated concept (v2)
-   Base: Concept One's editorial, person first layout.
-   Brought in from Concept Two: numbered 01/02/03 blocks,
-     the photo plus tagline plus side copy hero, card rows.
-   Reconciled from the 2026-08-26 review call and Kumar's
-     forwarded analysis (see Projects direction-v2.md).
-   Palette: iron gray + true neutral grays, plum on CTAs only.
-   Type: Fraunces (display) + Inter (body). No italics. No underlines.
+   Radhika Seshan · Homepage · Single concept
+   Built to Kumar Narayanan's forwarded blueprint (2026-08-26),
+   with the 2026-08-26 review call's copy rules layered on top.
+   See Projects/active/radhika-seshan-personal-brand/direction-v2.md.
+
+   From Kumar: hero line, four part credibility idea (rendered as
+     three titles, numbers held), personal proposition narrative,
+     three service pathways, the See clearly / Choose strategically /
+     Move deliberately framework, story led experience panels,
+     a Perspectives section, testimonials placeholder.
+   From the call: no italics, no underlines, iron gray and true
+     grays with plum on CTAs only, "mid career professionals" not
+     "women", no visa framing, "New thinking..." kept verbatim,
+     "coach" not "mentor", nav cut to four, cut text volume.
+   Held out: every metric, and every institution name.
    ============================================================ */
 :root{
   --ink:#141414;
@@ -116,7 +123,7 @@ a.text-link:hover .arrow{transform:translateX(4px)}
   transition:background .25s ease, transform .25s ease;
   white-space:nowrap;
 }
-.nav-cta:hover{background:var(--plum-press);transform:translateY(-1px)}
+.site-nav a.nav-cta:hover{background:var(--plum-press);transform:translateY(-1px)}
 .menu-toggle{
   display:none;background:none;border:none;cursor:pointer;
   width:44px;height:44px;border-radius:8px;
@@ -168,29 +175,28 @@ a.text-link:hover .arrow{transform:translateX(4px)}
 /* ---------- Hero ---------- */
 .hero{padding:92px 0 96px;background:var(--paper)}
 .hero-grid{
-  display:grid;grid-template-columns:1.05fr .95fr;
+  display:grid;grid-template-columns:1.08fr .92fr;
   gap:64px;align-items:center;
+}
+.hero .kicker{
+  font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--plum);margin-bottom:22px;
 }
 .hero h1{
   font-family:var(--font-display);font-weight:500;color:var(--ink);
-  font-size:clamp(44px, 5.4vw, 74px);
-  line-height:1.02;letter-spacing:-.01em;
-}
-.hero .tagline{
-  margin-top:26px;
-  font-family:var(--font-display);font-weight:400;
-  color:var(--iron);
-  font-size:clamp(22px, 2.5vw, 31px);
-  line-height:1.28;max-width:20ch;
+  font-size:clamp(34px, 4.4vw, 56px);
+  line-height:1.1;letter-spacing:-.008em;
+  text-wrap:balance;
 }
 .hero .hero-sub{
-  margin-top:22px;font-size:17px;line-height:1.7;
-  color:var(--body);max-width:44ch;
+  margin-top:24px;font-size:17px;line-height:1.7;
+  color:var(--body);max-width:48ch;
 }
 .hero-actions{
-  margin-top:36px;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  margin-top:34px;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
 }
 .hero-question{
+  margin-top:20px;
   font-family:var(--font-display);font-weight:500;
   color:var(--ink);font-size:19px;
 }
@@ -220,36 +226,72 @@ a.text-link:hover .arrow{transform:translateX(4px)}
 }
 .credline .sep{color:var(--hairline);font-weight:400}
 
-/* ---------- Own your journey ---------- */
-.journey{background:var(--mist);padding:104px 0}
-.journey-head{max-width:660px;margin:0 auto 56px;text-align:center}
-.journey-rule{width:44px;height:3px;background:var(--plum);margin:0 auto 26px}
-.journey-head h2{font-size:clamp(34px, 3.8vw, 50px)}
-.journey-head p{margin:22px auto 0;font-size:17px;line-height:1.8;max-width:60ch}
-.journey-grid{
+/* ---------- Personal proposition ---------- */
+.proposition{padding:104px 0;background:var(--white)}
+.proposition-inner{max-width:760px;margin:0 auto}
+.proposition .eyebrow{margin-bottom:20px}
+.proposition h2{font-size:clamp(30px, 3.4vw, 44px);max-width:22ch}
+.proposition .prop-body{
+  margin-top:26px;font-size:18px;color:var(--iron);line-height:1.72;max-width:64ch;
+}
+.proposition .prop-body + .prop-body{margin-top:18px;font-size:16.5px;color:var(--body)}
+
+/* ---------- Ways to work (three cards) ---------- */
+.ways{background:var(--mist);padding:104px 0}
+.ways-head{max-width:640px;margin:0 auto 54px;text-align:center}
+.ways-head h2{font-size:clamp(32px, 3.6vw, 48px)}
+.ways-head p{margin:20px auto 0;font-size:16.5px;max-width:54ch}
+.ways-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.way-card{
+  background:var(--white);border:1px solid var(--hairline);
+  border-radius:var(--radius-img);padding:36px 30px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.way-label{
+  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--plum);
+}
+.way-card h3{
+  font-family:var(--font-display);font-weight:500;color:var(--ink);
+  font-size:21px;line-height:1.25;
+}
+.way-card p{font-size:15px;color:var(--body);flex:1}
+.way-card .text-link{margin-top:6px}
+
+/* ---------- Signature approach ---------- */
+.approach{background:var(--white);padding:104px 0}
+.approach-head{max-width:660px;margin:0 auto 56px;text-align:center}
+.approach-rule{width:44px;height:3px;background:var(--plum);margin:0 auto 26px}
+.approach-head h2{font-size:clamp(34px, 3.8vw, 50px)}
+.approach-head p{margin:22px auto 0;font-size:17px;line-height:1.8;max-width:58ch}
+.approach-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   border:1px solid var(--hairline);border-radius:var(--radius-img);
-  overflow:hidden;background:var(--white);
+  overflow:hidden;background:var(--mist);
 }
-.journey-cell{padding:40px 34px;display:flex;flex-direction:column;gap:16px}
-.journey-cell + .journey-cell{border-left:1px solid var(--hairline)}
-.journey-num{
+.approach-cell{padding:40px 34px;display:flex;flex-direction:column;gap:16px;background:var(--white)}
+.approach-cell + .approach-cell{border-left:1px solid var(--hairline)}
+.approach-num{
   font-family:var(--font-display);font-weight:500;
   font-size:15px;color:var(--plum);letter-spacing:.02em;
 }
-.journey-cell h3{
+.approach-cell h3{
   font-family:var(--font-display);font-weight:500;color:var(--ink);
   font-size:22px;line-height:1.22;
 }
-.journey-cell p{font-size:15.5px;color:var(--body)}
-.journey-close{
-  max-width:640px;margin:44px auto 0;text-align:center;
+.approach-cell p{font-size:15.5px;color:var(--body)}
+.approach-connect{
+  max-width:640px;margin:40px auto 0;text-align:center;
+  font-size:16.5px;color:var(--body);line-height:1.7;
+}
+.approach-close{
+  max-width:600px;margin:20px auto 0;text-align:center;
   font-family:var(--font-display);font-weight:400;
   color:var(--iron);font-size:clamp(19px, 2vw, 24px);line-height:1.5;
 }
 
 /* ---------- Career planning ---------- */
-.planning{padding:104px 0;background:var(--white)}
+.planning{padding:104px 0;background:var(--mist)}
 .planning-grid{
   display:grid;grid-template-columns:1fr 1fr;
   gap:72px;align-items:center;
@@ -263,35 +305,13 @@ a.text-link:hover .arrow{transform:translateX(4px)}
 .planning .text-link{margin-top:26px}
 .planning-figure{
   border-radius:var(--radius-img);border:1px solid var(--hairline);
-  background:var(--mist);aspect-ratio:3/4;
+  background:var(--white);aspect-ratio:3/4;
   display:flex;align-items:center;justify-content:center;padding:32px;
 }
 .figure-note{
   text-align:center;color:var(--soft);font-size:14px;line-height:1.6;max-width:26ch;
 }
 .figure-note b{display:block;color:var(--iron);font-weight:600;margin-bottom:6px;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
-
-/* ---------- Who she helps ---------- */
-.helps{background:var(--mist);padding:104px 0}
-.helps-head{max-width:620px;margin:0 auto 54px;text-align:center}
-.helps-head h2{font-size:clamp(32px, 3.6vw, 48px)}
-.helps-head p{margin:20px auto 0;font-size:16.5px;max-width:52ch}
-.helps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.help-card{
-  background:var(--white);border:1px solid var(--hairline);
-  border-radius:var(--radius-img);padding:36px 30px;
-  display:flex;flex-direction:column;gap:14px;
-}
-.help-label{
-  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--plum);
-}
-.help-card h3{
-  font-family:var(--font-display);font-weight:500;color:var(--ink);
-  font-size:21px;line-height:1.25;
-}
-.help-card p{font-size:15px;color:var(--body);flex:1}
-.help-card .text-link{margin-top:6px}
 
 /* ---------- Experience that informs the work ---------- */
 .proof{padding:104px 0;background:var(--white)}
@@ -305,6 +325,48 @@ a.text-link:hover .arrow{transform:translateX(4px)}
   font-size:20px;line-height:1.25;margin-bottom:12px;
 }
 .proof-item p{font-size:15px;color:var(--body)}
+
+/* ---------- Selected evidence ---------- */
+.evidence{padding:96px 0;background:var(--mist)}
+.evidence-head{max-width:600px;margin:0 auto 44px;text-align:center}
+.evidence-head .eyebrow{margin-bottom:16px}
+.evidence-head h2{font-size:clamp(28px, 3vw, 40px)}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:960px;margin:0 auto}
+.evidence-item{
+  background:var(--white);border:1px solid var(--hairline);
+  border-radius:var(--radius-img);padding:30px 26px;
+  font-family:var(--font-display);font-weight:400;color:var(--iron);
+  font-size:17px;line-height:1.4;
+}
+.evidence-hold{
+  max-width:640px;margin:28px auto 0;text-align:center;
+  font-size:13.5px;color:var(--soft);line-height:1.6;
+}
+
+/* ---------- Perspectives ---------- */
+.persp{padding:104px 0;background:var(--white)}
+.persp-head{max-width:620px;margin:0 auto 48px;text-align:center}
+.persp-head .eyebrow{margin-bottom:16px}
+.persp-head h2{font-size:clamp(30px, 3.4vw, 44px)}
+.persp-head p{margin:18px auto 0;font-size:15.5px;max-width:50ch;color:var(--soft)}
+.persp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.persp-card{
+  border:1px solid var(--hairline);border-radius:var(--radius-img);
+  padding:32px 28px;display:flex;flex-direction:column;gap:14px;
+  background:var(--paper);
+}
+.persp-kicker{
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--plum);
+}
+.persp-card h3{
+  font-family:var(--font-display);font-weight:500;color:var(--ink);
+  font-size:19px;line-height:1.3;flex:1;
+}
+.persp-tag{
+  font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--soft);
+}
 
 /* ---------- Testimonials (placeholder) ---------- */
 .voices{background:var(--mist);padding:96px 0}
@@ -328,11 +390,11 @@ a.text-link:hover .arrow{transform:translateX(4px)}
 .cta-inner{max-width:680px;margin:0 auto;text-align:center}
 .cta-band .eyebrow{color:rgba(255,255,255,.7);margin-bottom:20px}
 .cta-band h2{
-  color:#fff;font-size:clamp(38px, 4.6vw, 60px);
-  font-family:var(--font-display);font-weight:500;line-height:1.05;
+  color:#fff;font-size:clamp(34px, 4.2vw, 54px);
+  font-family:var(--font-display);font-weight:500;line-height:1.08;
 }
 .cta-band .band-body{
-  margin:24px auto 0;font-size:17px;color:#D8DADD;max-width:46ch;
+  margin:24px auto 0;font-size:17px;color:#D8DADD;max-width:48ch;
 }
 .cta-band .btn-white{margin-top:36px}
 
@@ -415,12 +477,14 @@ a.text-link:hover .arrow{transform:translateX(4px)}
   .hero-grid{grid-template-columns:1fr;gap:44px}
   .hero{padding:64px 0 76px}
   .hero-media{max-width:460px}
-  .journey-grid{grid-template-columns:1fr}
-  .journey-cell + .journey-cell{border-left:0;border-top:1px solid var(--hairline)}
+  .ways-grid{grid-template-columns:1fr;gap:20px}
+  .approach-grid{grid-template-columns:1fr}
+  .approach-cell + .approach-cell{border-left:0;border-top:1px solid var(--hairline)}
   .planning-grid{grid-template-columns:1fr;gap:44px}
   .planning-figure{max-width:420px;aspect-ratio:4/3}
-  .helps-grid{grid-template-columns:1fr;gap:20px}
   .proof-grid{grid-template-columns:1fr;gap:34px}
+  .evidence-grid{grid-template-columns:1fr;gap:16px;max-width:440px}
+  .persp-grid{grid-template-columns:1fr;gap:20px}
   .news-grid{grid-template-columns:1fr;gap:40px}
   .news-figure{max-width:360px}
   .footer-grid{grid-template-columns:1fr 1fr}
@@ -428,10 +492,11 @@ a.text-link:hover .arrow{transform:translateX(4px)}
 @media (max-width:560px){
   .container,.header-inner{padding:0 20px}
   .mobile-nav{padding-left:20px;padding-right:20px}
-  .journey,.planning,.helps,.proof,.newsletter{padding:72px 0}
+  .proposition,.ways,.approach,.planning,.proof,.persp,.newsletter{padding:72px 0}
+  .evidence{padding:64px 0}
   .cta-band{padding:84px 0}
   .hero{padding:48px 0 64px}
-  .journey-cell{padding:32px 26px}
+  .approach-cell{padding:32px 26px}
   .signup{flex-direction:column}
   .signup button{padding:14px 24px;width:100%}
   .footer-grid{grid-template-columns:1fr}
@@ -448,10 +513,10 @@ a.text-link:hover .arrow{transform:translateX(4px)}
     <a class="wordmark" href="#top" aria-label="Radhika Seshan, home">Radhika Seshan<span class="dot" aria-hidden="true"></span></a>
     <nav class="site-nav" aria-label="Primary">
       <a href="#top">Home</a>
-      <a href="#offerings">Offerings</a>
-      <a href="#credentials">Credentials</a>
+      <a href="#ways">Ways to work</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a class="nav-cta" href="#consultation">Book a free consultation</a>
+      <a class="nav-cta" href="#consultation">Start a conversation</a>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -459,83 +524,131 @@ a.text-link:hover .arrow{transform:translateX(4px)}
   </div>
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
     <a href="#top">Home</a>
-    <a href="#offerings">Offerings</a>
-    <a href="#credentials">Credentials</a>
+    <a href="#ways">Ways to work</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    <a class="mobile-cta" href="#consultation">Book a free consultation</a>
+    <a class="mobile-cta" href="#consultation">Start a conversation</a>
   </nav>
 </header>
 
 <main id="main">
 
   <!-- ============ 1. HERO ============ -->
+  <!-- Hero line is Kumar's, verbatim (direction-v2.md row 40). Radhika still picks the final version. -->
   <section class="hero" id="top">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1 class="reveal">Radhika Seshan</h1>
-        <p class="tagline reveal" style="transition-delay:.05s">A real world roadmap for career development.</p>
-        <p class="hero-sub reveal" style="transition-delay:.1s">You already have what it takes. The next step is a strategy for what comes next, and someone to build it with you.</p>
-        <div class="hero-actions reveal" style="transition-delay:.15s">
-          <span class="hero-question">What's your plan?</span>
-          <a class="btn-primary" href="#consultation">Book a free consultation</a>
+        <p class="kicker reveal">Career strategy &nbsp;&middot;&nbsp; Coaching &nbsp;&middot;&nbsp; Advisory</p>
+        <h1 class="reveal" style="transition-delay:.05s">Your experience has brought you this far. Let us make it work harder for what comes next.</h1>
+        <p class="hero-sub reveal" style="transition-delay:.1s">Career strategy, coaching and advisory for professionals navigating change, and for organizations preparing people for the future of work.</p>
+        <p class="hero-question reveal" style="transition-delay:.13s">What is your plan for what comes next?</p>
+        <div class="hero-actions reveal" style="transition-delay:.16s">
+          <a class="btn-primary" href="#consultation">Start a conversation</a>
+          <a class="text-link" href="#about">Meet Radhika <span class="arrow" aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="hero-media reveal" style="transition-delay:.1s">
-        <!-- Client supplied portrait, received 2026-08-26, 4:5 crop. A speaking or facilitating photograph is the preferred final asset. -->
+        <!-- Client supplied portrait, received 2026-08-26, 4:5 crop. A direct, senior portrait is the preferred final asset. -->
         <img src="assets/radhika-hero.jpg" alt="Radhika Seshan, photographed in front of a colonnade." width="1054" height="1317" loading="eager" decoding="async">
       </div>
     </div>
   </section>
 
-  <!-- ============ 2. CREDIBILITY LINE (titles only, no employers, no numbers) ============ -->
+  <!-- ============ 2. CREDIBILITY LINE ============ -->
+  <!-- Kumar's four part line rendered as three titles. "Three decades" moved to Selected evidence
+       so the strip carries no numbers, per the call. No employer names anywhere. -->
   <section class="credline" id="credentials-strip">
     <div class="container">
       <span>PhD in economics</span>
       <span class="sep" aria-hidden="true">/</span>
-      <span>Vice President of Product Management</span>
+      <span>Technology and product executive</span>
       <span class="sep" aria-hidden="true">/</span>
-      <span>Dean at multiple universities</span>
+      <span>Dean and academic leader</span>
     </div>
   </section>
 
-  <!-- ============ 3. OWN YOUR JOURNEY (numbered blocks from Concept Two, connected) ============ -->
-  <section class="journey" id="journey">
+  <!-- ============ 3. PERSONAL PROPOSITION ============ -->
+  <!-- First person narrative from Kumar's draft (direction-v2.md, Kumar item 2). Draft copy, Radhika supplies her own words. -->
+  <section class="proposition" id="about">
+    <div class="container proposition-inner">
+      <p class="eyebrow reveal">Why this work</p>
+      <h2 class="display reveal" style="transition-delay:.05s">I know what it means to build, and rebuild, a career.</h2>
+      <p class="prop-body reveal" style="transition-delay:.1s">My own path has crossed economics, technology, product leadership and higher education. I began as an economist, built products and led global teams in the technology industry, then moved into academic leadership, where I helped institutions and people respond to changing professions, technologies and expectations.</p>
+      <p class="prop-body reveal" style="transition-delay:.14s">That path was not linear. It asked me to recognize transferable strengths, step into unfamiliar rooms, make hard choices, and keep learning. It is also why I believe a career is not something you find once. It is something you learn to shape on purpose.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. WAYS TO WORK (three pathways, Kumar's structure) ============ -->
+  <section class="ways" id="ways">
     <div class="container">
-      <div class="journey-head reveal">
-        <div class="journey-rule" aria-hidden="true"></div>
-        <h2 class="display">Own your journey.</h2>
-        <p>Owning your journey means becoming an agent for yourself. You go looking for the insights, the support, the options and the strategies, instead of waiting for them to arrive.</p>
+      <div class="ways-head reveal">
+        <h2 class="display">Three ways to work together.</h2>
+        <p>One person at a time, one group at a time, or one organization at a time.</p>
       </div>
-      <div class="journey-grid reveal" style="transition-delay:.05s">
-        <div class="journey-cell">
-          <span class="journey-num">01 / Striving</span>
-          <h3>Trying, without being attached to a guaranteed result.</h3>
-          <p>Playing the long game against a five year picture, not the next promotion.</p>
-        </div>
-        <div class="journey-cell">
-          <span class="journey-num">02 / Positive action</span>
-          <h3>Not spending energy on what you cannot change.</h3>
-          <p>Deciding what to do next, and doing it. Then looking again.</p>
-        </div>
-        <div class="journey-cell">
-          <span class="journey-num">03 / A real world roadmap</span>
-          <h3>We build it together, step by step.</h3>
-          <p>After each step we check whether it took you where you needed to go, and we adjust.</p>
-        </div>
+      <div class="ways-grid reveal" style="transition-delay:.05s">
+        <article class="way-card">
+          <span class="way-label">Individual career strategy</span>
+          <h3>For the professional deciding what comes next.</h3>
+          <p>For experienced people weighing advancement, a move sideways, reinvention, or a return to work. Together you clarify the next step, turn a long career into a clear story, weigh real options and tradeoffs, read the organizational dynamics, and build a plan you can act on.</p>
+          <a class="text-link" href="#consultation">Explore individual work <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="way-card">
+          <span class="way-label">Cohorts, groups and workshops</span>
+          <h3>For the group moving through change together.</h3>
+          <p>For professional associations, alumni networks, women's leadership cohorts, and employer sponsored programs. Guided career strategy in a room of peers: leadership transitions, professional identity, building agency during change, and how AI is reshaping professions.</p>
+          <a class="text-link" href="#consultation">Explore group programs <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="way-card">
+          <span class="way-label">Organizational advisory and speaking</span>
+          <h3>For the organization preparing its people.</h3>
+          <p>For employers, universities and mission driven organizations working on talent development, career mobility, adult learning, and the workforce implications of AI. Radhika reads this the way an economist does: where the strain will show, where the opening is, and what to do now to be ready.</p>
+          <a class="text-link" href="#consultation">Explore advisory and speaking <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </article>
       </div>
-      <p class="journey-close reveal" style="transition-delay:.1s">The roadmap is what we develop together. The journey stays yours.</p>
     </div>
   </section>
 
-  <!-- ============ 4. CAREER PLANNING, NOT JUST PROFESSIONAL DEVELOPMENT ============ -->
-  <section class="planning" id="about">
+  <!-- ============ 5. SIGNATURE APPROACH ============ -->
+  <!-- Heading "Own your journey" is the call's approved heading. The three verbs are Kumar's
+       (direction-v2.md row 24). Closing line keeps "a real world roadmap", which the call said to keep. -->
+  <section class="approach" id="approach">
+    <div class="container">
+      <div class="approach-head reveal">
+        <div class="approach-rule" aria-hidden="true"></div>
+        <h2 class="display">Own your journey.</h2>
+        <p>Owning your journey means becoming an agent for yourself. You go looking for the insight, the options and the strategy, instead of waiting for them to arrive. The work moves through three steps.</p>
+      </div>
+      <div class="approach-grid reveal" style="transition-delay:.05s">
+        <div class="approach-cell">
+          <span class="approach-num">01 / See clearly</span>
+          <h3>Understand where you actually stand.</h3>
+          <p>Your strengths, your motivations, your circumstances, and the realities of the environment around you.</p>
+        </div>
+        <div class="approach-cell">
+          <span class="approach-num">02 / Choose strategically</span>
+          <h3>Decide what deserves your time.</h3>
+          <p>Identify the credible possibilities, weigh the tradeoffs, and commit your energy and reputation where they count.</p>
+        </div>
+        <div class="approach-cell">
+          <span class="approach-num">03 / Move deliberately</span>
+          <h3>Turn the decision into progress.</h3>
+          <p>Positioning, relationships, action, and steady forward motion. After each step we check whether it took you where you needed to go, and adjust.</p>
+        </div>
+      </div>
+      <p class="approach-connect reveal" style="transition-delay:.1s">The aim is not simply to feel more confident. It is to see your situation more clearly, make stronger choices, and act with greater agency.</p>
+      <p class="approach-close reveal" style="transition-delay:.12s">A real world roadmap, built together. The journey stays yours.</p>
+    </div>
+  </section>
+
+  <!-- ============ 6. CAREER PLANNING, NOT JUST PROFESSIONAL DEVELOPMENT ============ -->
+  <section class="planning" id="planning">
     <div class="container planning-grid">
       <div class="planning-copy">
         <p class="eyebrow reveal">The distinction</p>
         <h2 class="display reveal" style="transition-delay:.05s">Career planning, not just professional development.</h2>
         <p class="lead reveal" style="transition-delay:.1s">Professional development is the certificates: project management, analytics, the skills you choose to learn. Radhika values those. She used them. Career planning is the layer above: who you know, what you know, and what you need to learn next.</p>
         <p class="support reveal" style="transition-delay:.15s">At Bell Labs she moved from the economic analysis group into a technology group knowing no technology. The company sent her to programming training on campus, then to a company on the West Coast for two weeks to learn object oriented programming. It changed her work. Intentional planning, sometimes a little serendipity, the right people around you, and training exactly when you need it.</p>
-        <a class="text-link reveal" style="transition-delay:.2s" href="#credentials">Read her full story <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="text-link reveal" style="transition-delay:.2s" href="#about">Read her full story <span class="arrow" aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="planning-figure reveal" style="transition-delay:.1s">
         <p class="figure-note"><b>Photograph</b>Radhika teaching or facilitating a session. Client asset pending.</p>
@@ -543,38 +656,8 @@ a.text-link:hover .arrow{transform:translateX(4px)}
     </div>
   </section>
 
-  <!-- ============ 5. WHO SHE HELPS (three cards, side by side) ============ -->
-  <section class="helps" id="offerings">
-    <div class="container">
-      <div class="helps-head reveal">
-        <h2 class="display">Who she helps.</h2>
-        <p>Three ways to work with Radhika: one person at a time, one group at a time, or one organization at a time.</p>
-      </div>
-      <div class="helps-grid reveal" style="transition-delay:.05s">
-        <article class="help-card">
-          <span class="help-label">Coaching</span>
-          <h3>For the professional ready to take the next step.</h3>
-          <p>Mid career professionals, women among them, moving up, moving sideways, or changing course. People who moved to the US for work, and people who have been here all along and share the same questions. The part no course teaches is reading the room, and knowing that what worked before will not always work now.</p>
-          <a class="text-link" href="#offerings">Explore coaching <span class="arrow" aria-hidden="true">&rarr;</span></a>
-        </article>
-        <article class="help-card">
-          <span class="help-label">Cohorts and workshops</span>
-          <h3>For the group learning together.</h3>
-          <p>Women's leadership cohorts, alumni communities, employer sponsored development programs. Guided career strategy in a room of peers, built around the same roadmap.</p>
-          <a class="text-link" href="#offerings">Explore group programs <span class="arrow" aria-hidden="true">&rarr;</span></a>
-        </article>
-        <article class="help-card">
-          <span class="help-label">Speaking and advisory</span>
-          <h3>For the organization preparing for what comes next.</h3>
-          <p>Continuing education divisions. Ventures bringing AI into higher education. Mid sized companies scoping what their workforce needs to learn next. Radhika reads this the way an economist does: where the strain will show, where the opening is, and what to do now to be ready.</p>
-          <a class="text-link" href="#offerings">Explore speaking and advisory <span class="arrow" aria-hidden="true">&rarr;</span></a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 6. EXPERIENCE THAT INFORMS THE WORK (stories, no metrics) ============ -->
-  <section class="proof" id="credentials">
+  <!-- ============ 7. EXPERIENCE THAT INFORMS THE WORK (Kumar's three panels) ============ -->
+  <section class="proof" id="experience">
     <div class="container">
       <div class="proof-head reveal">
         <p class="eyebrow">Experience that informs the work</p>
@@ -588,17 +671,63 @@ a.text-link:hover .arrow{transform:translateX(4px)}
         </div>
         <div class="proof-item">
           <h3>Developing people and possibilities</h3>
-          <p>Her work with adult and professional learners has focused on what experienced people actually need from education: relevance, flexibility, support, and a clear link between effort and opportunity.</p>
+          <p>Her work with adult and professional learners has focused on what experienced people actually need from education: relevance, flexibility, support, belonging, and a clear link between effort and opportunity.</p>
         </div>
         <div class="proof-item">
           <h3>Leading through change</h3>
-          <p>She has led large academic organizations, built new programs, brought faculty and staff together around a change in direction, and kept learning, technology and financial health in view at the same time.</p>
+          <p>She has led large academic organizations, built new programs, brought faculty and staff together around a change in direction, and kept learning, technology, student experience and financial health in view at once.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 7. TESTIMONIALS (placeholder, none cleared yet) ============ -->
+  <!-- ============ 8. SELECTED EVIDENCE ============ -->
+  <!-- Kumar wanted a four point evidence strip with figures. Every number is held pending Radhika's
+       sign off and her employer disclosure (direction-v2.md rows 32 to 37). Qualitative only here. -->
+  <section class="evidence" id="evidence">
+    <div class="container">
+      <div class="evidence-head reveal">
+        <p class="eyebrow">Selected evidence</p>
+        <h2 class="display">Range, scale and results.</h2>
+      </div>
+      <div class="evidence-grid reveal" style="transition-delay:.05s">
+        <div class="evidence-item">Three decades across technology, higher education and professional learning</div>
+        <div class="evidence-item">Senior academic leadership across multiple universities</div>
+        <div class="evidence-item">Global technology and product leadership earlier in her career</div>
+      </div>
+      <p class="evidence-hold reveal" style="transition-delay:.1s">A fuller set of figures, learners served, organization size and revenue growth, is held until Radhika signs off on the exact wording and completes her employer disclosure.</p>
+    </div>
+  </section>
+
+  <!-- ============ 9. PERSPECTIVES (Kumar item 10) ============ -->
+  <section class="persp" id="perspectives">
+    <div class="container">
+      <div class="persp-head reveal">
+        <p class="eyebrow">Perspectives</p>
+        <h2 class="display">Thinking, before we talk.</h2>
+        <p>Three pieces at launch. Draft titles below, to be written in Radhika's own voice.</p>
+      </div>
+      <div class="persp-grid reveal" style="transition-delay:.05s">
+        <article class="persp-card">
+          <span class="persp-kicker">Essay</span>
+          <h3>Your next career may already be hidden in your current one.</h3>
+          <span class="persp-tag">Draft title</span>
+        </article>
+        <article class="persp-card">
+          <span class="persp-kicker">Essay</span>
+          <h3>What experienced professionals should ask before a major career move.</h3>
+          <span class="persp-tag">Draft title</span>
+        </article>
+        <article class="persp-card">
+          <span class="persp-kicker">Essay</span>
+          <h3>AI will change careers, but not the same way for everyone.</h3>
+          <span class="persp-tag">Draft title</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. TESTIMONIALS (placeholder, none cleared yet) ============ -->
   <section class="voices">
     <div class="container">
       <div class="voices-inner reveal">
@@ -610,18 +739,20 @@ a.text-link:hover .arrow{transform:translateX(4px)}
     </div>
   </section>
 
-  <!-- ============ 8. CTA BAND (question, the one dark band, plum on the button only) ============ -->
+  <!-- ============ 11. FINAL INVITATION ============ -->
+  <!-- Question headline (call). "Start a conversation" and the complimentary line are Kumar's (item 4). -->
   <section class="cta-band" id="consultation">
     <div class="container cta-inner">
       <p class="eyebrow reveal">A free conversation</p>
-      <h2 class="reveal" style="transition-delay:.05s">What's your plan?</h2>
-      <p class="band-body reveal" style="transition-delay:.1s">A free 30 minute conversation. No pitch. A look at where you are, and where you want to go.</p>
-      <a class="btn-white reveal" style="transition-delay:.15s" href="#contact">Book a free consultation</a>
+      <h2 class="reveal" style="transition-delay:.05s">What is your plan for what comes next?</h2>
+      <p class="band-body reveal" style="transition-delay:.1s">The first 30 minute conversation is complimentary. No pitch. A look at where you are, and where you want to go.</p>
+      <a class="btn-white reveal" style="transition-delay:.15s" href="#contact">Start a conversation</a>
     </div>
   </section>
 
-  <!-- ============ 9. LATEST WRITING + NEWSLETTER (launch state: capture only) ============ -->
-  <!-- Writing moves to Substack in principle (2026-08-26). Pending the Substack audience check, launch with the signup alone; later surface the three latest pieces here. -->
+  <!-- ============ 12. NEWSLETTER (launch state: capture only) ============ -->
+  <!-- "New thinking, when there is something worth saying" kept verbatim (the call). Writing moves to
+       Substack in principle; pending that check, launch with the signup alone. -->
   <section class="newsletter" id="writing">
     <div class="container news-grid">
       <div>
@@ -648,14 +779,15 @@ a.text-link:hover .arrow{transform:translateX(4px)}
     <div class="footer-grid">
       <div>
         <p class="footer-wordmark">Radhika Seshan</p>
-        <p class="footer-tagline">Career planning, coaching, speaking, advisory.</p>
+        <p class="footer-tagline">Career strategy, coaching, speaking, advisory.</p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
           <li><a href="#top">Home</a></li>
-          <li><a href="#offerings">Offerings</a></li>
-          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#ways">Ways to work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#perspectives">Perspectives</a></li>
           <li><a href="#consultation">Contact</a></li>
         </ul>
       </div>
