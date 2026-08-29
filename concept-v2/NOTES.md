@@ -1,51 +1,58 @@
-# Radhika Seshan · Homepage · Consolidated concept (v2) — build notes
+# Radhika Seshan · Homepage · The concept — build notes
 
-**Date:** 2026-08-28 · **For:** the Wix rebuild
+**Date:** 2026-08-30 · **For:** the Wix rebuild
 **Source of truth:** `Frost/Projects/active/radhika-seshan-personal-brand/direction-v2.md`, `copy.md`, `design-direction.md`, `site-spec.md`
 
 ---
 
 ## What this is
 
-The single homepage concept, built from the 2026-08-26 review call and Kumar Narayanan's forwarded AI analysis of the same evening. It replaces Concept One and Concept Two as the working direction. Concept One's calm, person-first editorial layout is the base; the numbered blocks, card structure and stronger section rhythm come from Concept Two.
+The single homepage concept. Built to **Kumar Narayanan's forwarded blueprint** (2026-08-26 email, full text in `Shuja2/raw/gmail/2026-08-26-analysis-and-recommendation.md`), with the **2026-08-26 review call's copy rules** layered on top. It replaces Concept One and Concept Two as the working direction. Shuja's instruction on 2026-08-30: take Kumar's direction, combine it with Radhika's copy feedback, build one concept.
 
-## Decisions built in (LOCKED in direction-v2.md)
+## Kumar's direction, built in
 
-- Tone: supportive partner, not confident expert. No motivational-coach or guru register.
-- Hero: name set large, portrait beside it, "A real world roadmap for career development" as the enlarged tagline, "you already have what it takes" reduced to a supporting line, one question ("What's your plan?") plus one plum button. No dual CTA, no duplicate name beyond the wordmark.
-- Credibility line directly under the hero: titles only, no employer names, no numbers.
-- "Own your journey" as three connected numbered blocks (01 Striving, 02 Positive action, 03 A real world roadmap), closing on "the roadmap is what we develop together, the journey stays yours".
-- "Career planning, not just professional development" reframe, with the Bell Labs just-in-time-training story.
-- Who she helps: three cards side by side (coaching, cohorts/workshops, speaking/advisory). Audience language is "mid career professionals" with women named inside, relocated professionals not "Indian professionals", no visa or immigration framing, futurist angle for organizations.
-- "Experience that informs the work": three story-led panels, no metrics.
-- Testimonials: visible placeholder block, marked "content pending client input".
-- CTA band: a question ("What's your plan?"), the one dark band, plum on the button only.
+- **Hero line** is Kumar's, verbatim: "Your experience has brought you this far. Let us make it work harder for what comes next." Support line is his too. Radhika still picks the final version (her own draft and the call's line are the alternatives).
+- **Credibility line** directly under the hero, three titles: PhD in economics / Technology and product executive / Dean and academic leader. Kumar's fourth part ("three decades...") moved down to Selected evidence so the strip carries no numbers.
+- **Personal proposition**: first-person passage, "I know what it means to build, and rebuild, a career." Drawn from Kumar's draft narrative. Radhika supplies her own words.
+- **Three service pathways** (Kumar's structure): Individual career strategy / Cohorts, groups and workshops / Organizational advisory and speaking. Each answers for whom, what problem, what result.
+- **Signature framework**: Kumar's three verbs. Heading stays "Own your journey" (the call approved that heading). 01 See clearly / 02 Choose strategically / 03 Move deliberately, Kumar's connecting line, closing on "a real world roadmap, built together, the journey stays yours" (the call said keep "real world roadmap").
+- **Experience that informs the work**: Kumar's three story-led panels (Reinventing across sectors / Developing people and possibilities / Leading through change).
+- **Selected evidence**: qualitative only. Kumar wanted a four-point figures strip. See "Held out" below.
+- **Perspectives**: three draft essay titles from Kumar's candidate list, marked as drafts.
+- **Testimonials**: visible placeholder, "content pending client input".
+- **CTA**: question headline (the call), Kumar's "Start a conversation" button and complimentary-first-conversation line.
+- **Photography** away from the Roxie Nafousi wellness aesthetic (Kumar's caution). Roxie stays the layout and type reference only.
+- **About page**: four-chapter structure (stubbed in `copy.md`).
+
+## The call's copy rules, layered on
+
+- No italics anywhere. No underlines anywhere (emphasis is weight and colour).
+- Palette: iron gray and true neutral grays, plum `#5B2A46` on CTAs only. No sepia, pink, light brown.
+- "mid career professionals" with women named inside, not "mid career women". "Indian professionals" out. No visa or immigration framing.
 - "New thinking, when there is something worth saying" kept verbatim.
-- Palette: iron gray and true neutral grays (`--mist:#F3F3F4`, corrects the old brownish cast), plum `#5B2A46` on CTAs only. No sepia, pink, light brown.
-- Type: Fraunces (display) + Inter (body). No italics anywhere. No underlines anywhere (emphasis is weight and colour).
-- Nav: four items, Home / Offerings / Credentials / Contact.
-
-## Where it takes the call's side, pending Radhika (RADHIKA DECIDES)
-
-- Hero wording uses the call's direction, not Kumar's "brought you this far" line.
-- Framework keeps her three (striving / positive action / real world roadmap), not Kumar's "see clearly / choose strategically / move deliberately".
-- Three service cards, not two (Kumar's cohorts pathway is included).
-- Credentials line carries no institution names at all, which sidesteps the UCLA in/out question. UCLA was an Associate Dean role, not a deanship, either way.
-- Consultation reads 30 minutes.
+- "coach" not "mentor".
+- Nav cut to four: Home / Ways to work / About / Contact.
+- Cut text volume: short paragraphs, images between.
+- Type: Fraunces (display) + Inter (body).
 
 ## Held out entirely (BLOCKED)
 
-- Every number Kumar proposed (learners served, org size, revenue growth, enterprise size).
-- The employer / institution name. "A public university in Minnesota" is not even used here; the page carries no place names.
+- Every number Kumar proposed (30+ years, ~23,000 learners, 350-person org, $30M revenue growth, $40M enterprise). The Selected evidence row is qualitative and carries a visible hold note.
+- Every institution name (University of Minnesota, Northeastern, SDSU, UCLA Extension). The page carries no place names.
 - Both need Radhika's explicit sign-off on exact wording and her completed employer disclosure.
+
+## Still RADHIKA DECIDES (surfaced on the repo index page)
+
+Hero version · framework (Kumar's vs her own) · two pathways or three · UCLA Extension in or out · Perspectives yes/no and will she write three · testimonial contacts · consultation length 30 vs 20.
 
 ## Assets
 
-- Hero: `assets/radhika-hero.jpg`, her own portrait, client supplied 2026-08-26, 4:5 crop. A speaking or facilitating photograph is the preferred final asset.
-- The "career planning" figure and the newsletter figure are marked grey placeholders, not stock. Kumar's caution: authentic Radhika photography only, steer away from the wellness-influencer aesthetic. Roxie Nafousi is the layout and type reference, not the photo mood.
+- Hero: `assets/radhika-hero.jpg`, her own portrait, client supplied 2026-08-26, 4:5 crop. A direct senior portrait, plus speaking/facilitating and small-group shots, are the preferred final assets.
+- The "career planning" figure and the newsletter figure are marked grey placeholders, not stock.
 
 ## Engineering
 
 - Single file, no build step. Google Fonts (Fraunces, Inter). Sticky header, mobile nav, IntersectionObserver reveals, `prefers-reduced-motion` respected, client-side newsletter validation.
-- Breakpoints at 1024px and 560px. Hero, name and single CTA survive small screens.
+- Breakpoints at 1024px and 560px. No horizontal overflow at 375px.
+- `.site-nav a.nav-cta` is fully qualified so its white text is not overridden by `.site-nav a` (0,1,1 vs 0,1,0).
 - `noindex, nofollow` while it is a review artifact.
