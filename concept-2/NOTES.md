@@ -98,6 +98,26 @@ Deliberately different from concept 1 at every point. No cards anywhere.
 * Nav links are in page anchors, because this concept is a single page by
   instruction. If it wins, it gets the same five page sitemap concept 1 has.
 
+## Hero and section cleanup, 2026-09-02
+
+Four changes, all from Shuja's direct feedback on this concept.
+
+* **Hero line runs on one line at every width.** It was breaking into three lines
+  under `text-wrap:balance` with a `20ch` cap. That is gone; the line now scales
+  with the viewport (`nowrap`, a `vw` driven font size) so it stays a single line
+  from phone to desktop.
+* **The centre CTA button is gone.** "Book a free consultation" no longer sits
+  under the hero line. The masthead and the closing Contact section still carry
+  the same call to action, so nothing is lost, the hero just reads as the line
+  alone now.
+* **The Career planning statement band is now on violet, not white**, matching
+  the framework band's palette (`--violet`) with the heading, body copy and
+  credential strip all recoloured for white-on-dark.
+* **The three Ways to work rows dropped their bullet lists.** "Clarify direction
+  and tradeoffs" and the two bullets beside it in each of the three rows are
+  gone; each row is now title, audience line, one paragraph, one link. The row
+  grid lost its fourth column to match.
+
 ## Writing row photography
 
 Three free Unsplash photos, added 2026-09-02, grayscale to match the hero's
