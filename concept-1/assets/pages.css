@@ -151,3 +151,20 @@
 @media (width<=760px){
   .mobile-nav{width:min(100% - 40px,620px);gap:18px;font-size:11px}
 }
+
+/* ---- perspective / writing card photography ----
+   Real photos under the same numeral + gradient wash Kumar's cards already
+   used, so the palette and layout he built stay exactly as they were. */
+.perspective-art,.post-art{position:relative}
+.perspective-art img,.post-art img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+  filter:grayscale(1) contrast(1.08) brightness(.88);
+}
+.perspective-art .art-wash,.post-art .art-wash{position:absolute;inset:0;z-index:1;mix-blend-mode:multiply}
+.perspective-art:before,.perspective-art:after,.post-art:before,.post-art:after{z-index:2}
+.perspective-art span,.post-art span{position:relative;z-index:3}
+.perspective-art.art-1 .art-wash,.post-art .art-wash{background:linear-gradient(135deg,#d7a0a8b3,#c87968a8)}
+.perspective-art.art-2 .art-wash{background:linear-gradient(145deg,#6f486dcc,#23162b66)}
+.perspective-art.art-3 .art-wash{background:linear-gradient(145deg,#c87968b8,#351b4340)}
+.post-art.tone-2 .art-wash{background:linear-gradient(145deg,#6f486dcc,#23162b66)}
+.post-art.tone-3 .art-wash{background:linear-gradient(145deg,#c87968b8,#351b4340)}
