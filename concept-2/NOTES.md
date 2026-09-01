@@ -118,6 +118,17 @@ Four changes, all from Shuja's direct feedback on this concept.
   gone; each row is now title, audience line, one paragraph, one link. The row
   grid lost its fourth column to match.
 
+## Hero line and scroll cue, 2026-09-02
+
+Two more changes on the hero, same day as the cleanup above.
+
+* **The hero line now sits just above the name**, not centred mid frame. The
+  centre block's `justify-content` moved from `center` to `flex-end` and the
+  bottom padding shrank, so the line reads as a lead in to the name directly
+  under it rather than floating alone in the middle of the portrait.
+* **The scroll cue is gone.** "Scroll" plus the short dash beside it sat above
+  the name; both are removed, along with the mobile rule that used to hide it.
+
 ## Writing row photography
 
 Three free Unsplash photos, added 2026-09-02, grayscale to match the hero's

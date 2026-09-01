@@ -108,8 +108,8 @@ p{margin:0}
 
 .hero-centre{
   position:relative;z-index:3;flex:1;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;padding:40px var(--gutter) 9vw;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  text-align:center;padding:40px var(--gutter) clamp(20px,3vw,48px);
 }
 .hero-line{
   font-family:var(--font-display);font-weight:600;color:var(--ink);
@@ -145,16 +145,6 @@ p{margin:0}
 }
 .hero-name .name-stack{display:none}
 .hero-name .name-stack svg + svg{margin-top:-.06em}
-
-.scroll-cue{
-  position:absolute;z-index:3;
-  left:max(var(--gutter),calc(50% - 720px + var(--gutter)));
-  bottom:calc(clamp(18px,2.4vw,34px) + 9vw + 30px);
-  margin:0;font-family:var(--font-display);font-size:10px;font-weight:600;
-  letter-spacing:.24em;text-transform:uppercase;color:var(--iron);
-  display:flex;align-items:center;gap:12px;
-}
-.scroll-cue::after{content:"";width:46px;height:1px;background:currentColor;opacity:.45}
 
 /* ==========================================================================
    2. Statement
@@ -398,7 +388,6 @@ footer{background:var(--violet-deep);color:rgba(255,255,255,.6);padding:0 0 40px
   .hero-name .name-single{display:none}
   .hero-name .name-stack{display:block}
   .hero-name{padding-bottom:16px}
-  .scroll-cue{display:none}
   .hero-centre{padding-bottom:40px}
   .topic{grid-template-columns:36px 1fr;row-gap:8px}
   .topic .tag{grid-column:2}
