@@ -1,6 +1,7 @@
 # Concept 1 — Kumar's layout, Radhika's words
 
 **Built:** 2026-09-02
+**Inner pages added:** 2026-09-02
 **Design source:** Kumar's mockup, `https://radhika-seshan-career-strategy.ksn69433.chatgpt.site`
 **Copy source:** the 2026-08-26 review call, via `copy.md` and `direction-v2.md` in the Frost project folder
 **Kumar's version, byte exact and untouched:** `../archive/kumar-exact/`
@@ -43,7 +44,61 @@ Four, and only four. Everything else is Kumar's.
 
 ## Still to decide, and still wrong
 
-- **The decorative numerals are still italic.** 01/02/03 in the approach and topic lists, I/II/III in the experience grid, the big numbers on the Perspectives cards. Left alone as a design flourish rather than copy, but row 8 arguably kills these too. Shuja's call.
+- ~~The decorative numerals are still italic.~~ **Fixed 2026-09-02.** 01/02/03, I/II/III and the Perspectives numerals are now upright. Row 8 was raised twice and does not carve out decoration.
 - **`hello@radhikaseshan.com` is invented.** Kumar's mockup used it. Radhika has not created a dedicated site email yet, and her personal Gmail should not go on a public page without her saying so. Placeholder until she answers.
 - **The LinkedIn URL is unverified.** `linkedin.com/in/seshanr` came from Kumar's mockup. Her real profile URL is still on the list of things owed.
 - **The hero, the framework and the two-versus-three audience question are all hers to answer.** This build picks one working answer to each so there is something to react to. It is not a decision.
+
+---
+
+# The inner pages
+
+Added 2026-09-02. Same design, same stylesheet, same type. Structure follows the sitemap agreed on the
+2026-08-26 call and recorded in `site-spec.md`: roughly four items, offerings and credentials and contact.
+
+| Page | File | What is on it |
+|---|---|---|
+| Offerings | `offerings.html` | One page, not three. Overview cards, then coaching, then cohorts and groups, then advisory and speaking, each with its own anchor |
+| About | `about.html` | The four chapters from row 15, in first person, closing on a short bio download |
+| Writing | `writing.html` | Blog index. Three sample pieces, marked as samples |
+| Sample article | `writing-post.html` | The reading layout, so the blog structure can be judged. Every word is filler |
+| Contact | `contact.html` | Name, email, what you are reaching out about, message. Plus the disclosure line |
+
+## Copy provenance for the new pages
+
+- **Offerings** takes the three audience blocks from `copy.md` and expands each. Coaching carries her own
+  mechanic from the call: you know the destination but not the route, she draws route options from
+  experience, you choose one together, then after each step she asks whether it got you where you needed
+  to be and what to pivot, and she holds you accountable. Advisory carries the futurist framing (row 23).
+- **About** follows Kumar's four chapters (row 15) and stays inside cleared facts: PhD in economics, Bell
+  Labs and the object oriented programming trip, product management across the US and the UK, Northeastern
+  and San Diego State by name, Minnesota unnamed. No tenure counts, no student numbers, no Lucent (it came
+  from the intake, not from her).
+- **Contact** uses the closing CTA copy from rows 42 to 44 and adds the disclosure friendly line the spec
+  asks for: offered in a personal capacity, no university endorsement implied.
+- **Writing** opens on row 4 verbatim, her favourite line. The three sample titles are the same candidates
+  already on the homepage Perspectives band. The article body is filler and says so on the page.
+
+## Design decisions on the new pages
+
+Everything reuses Kumar's components. A second stylesheet, `assets/pages.css`, holds what the homepage
+never needed. His bundle is not edited further.
+
+1. **Page hero.** Smaller than the homepage hero, same face and same rhythm.
+2. **Chapters** on About are the homepage story block with tighter padding and a rule between each.
+3. **Form fields** are new. Filled grey boxes rather than bare underlines, because bare underlines read as
+   loose rules sitting under the labels rather than as fields.
+4. **Post cards** mirror the Perspectives cards, retuned for a white ground.
+5. **Mobile navigation is new.** Kumar's build hid the nav below 1050px and put nothing in its place. That
+   was survivable on one page and is not survivable now. A plain row of links, no JavaScript.
+
+## Open on the new pages
+
+- **The contact form does not submit anywhere.** It is a static mockup. Wix wires the real one, and the
+  destination is `radhika.seshan@gmail.com` until she creates a dedicated site email.
+- **The short bio download points at nothing.** The file does not exist yet.
+- **`hello@radhikaseshan.com` and `linkedin.com/in/seshanr` are still unverified.** Same as the homepage.
+- **Writing is in the nav as a real page.** The call left this open: writing may live on Substack, in which
+  case this page becomes a link out and the sample layout is thrown away. Row 16, research still owed.
+- **Media & Press is not built.** The spec says it may fold into About. Waiting on her links list.
+- **Reading times on the sample cards are invented.** They come out when real pieces go in.

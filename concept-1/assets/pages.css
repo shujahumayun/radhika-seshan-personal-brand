@@ -1,0 +1,153 @@
+/* Page level additions for the inner pages.
+   Same tokens, same rhythm, same type as the homepage bundle.
+   Loaded after index-CevfxaK9.css so it can also correct locked items. */
+
+/* Radhika, 2026-08-26 call, raised twice: no italics anywhere.
+   The homepage bundle still italicises its decorative numerals. Corrected here. */
+.method-list article>span,
+.experience-number,
+.topic-list span,
+.perspective-art span{font-style:normal}
+
+.desktop-nav a[aria-current=page]{color:var(--clay)}
+
+/* ---- page hero ---- */
+.page-hero{padding-top:clamp(78px,9vw,130px);padding-bottom:clamp(58px,7vw,96px)}
+.page-hero .eyebrow{margin-bottom:26px}
+.page-hero h1{
+  font-family:Georgia,Times New Roman,serif;font-weight:400;
+  letter-spacing:-.042em;font-size:clamp(44px,5vw,76px);line-height:1.04;
+  margin:0;max-width:900px
+}
+.page-hero>p{color:var(--ink-soft);max-width:660px;margin:32px 0 0;font-size:18px;line-height:1.75}
+.page-hero .hero-actions{margin-top:38px}
+
+.hero-compact{min-height:auto;padding-top:clamp(58px,7vw,92px);padding-bottom:clamp(58px,7vw,92px)}
+.hero-compact h1{font-size:clamp(42px,4.4vw,64px)}
+
+/* ---- chapters (About) ---- */
+.chapter{padding-top:clamp(78px,8vw,112px);padding-bottom:clamp(78px,8vw,112px)}
+.chapter+.chapter{border-top:1px solid var(--line)}
+
+.section-note{color:var(--ink-soft);max-width:660px;margin:54px 0 0;font-size:15px;line-height:1.8}
+.section-cta{margin-top:38px}
+
+/* ---- short bio block (About) ---- */
+.bio-card{border:1px solid var(--line);background:#faf9fa;padding:48px}
+.bio-card span{color:var(--clay);letter-spacing:.14em;text-transform:uppercase;font-size:10px;font-weight:700}
+.bio-card p{color:var(--ink-soft);margin:22px 0 0;font-family:Georgia,Times New Roman,serif;font-size:23px;line-height:1.55}
+.bio-card small{color:var(--ink-soft);letter-spacing:.1em;text-transform:uppercase;margin-top:18px;font-size:10px;display:block}
+
+/* ---- contact page ---- */
+.contact-page{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(270px,.85fr);
+  gap:clamp(46px,6vw,96px);align-items:start;
+  padding-top:8px;padding-bottom:clamp(88px,10vw,140px)
+}
+.form-grid{display:grid;gap:28px;border-top:1px solid var(--line);padding-top:42px}
+.field{display:grid;gap:10px}
+.field label{color:var(--ink-soft);letter-spacing:.13em;text-transform:uppercase;font-size:10px;font-weight:700}
+.field input,.field select,.field textarea{
+  font-family:inherit;font-size:15px;color:var(--ink);background:#faf9fa;
+  border:1px solid var(--line);border-radius:0;
+  padding:14px 16px;width:100%;outline:none
+}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--clay);background:#fff}
+.form-grid .button{justify-self:start;margin-top:12px}
+.contact-aside{display:grid;gap:38px;border-top:1px solid var(--line);padding-top:42px}
+.aside-block h3{
+  margin:0 0 13px;color:var(--clay);letter-spacing:.14em;text-transform:uppercase;
+  font-family:inherit;font-size:10px;font-weight:700
+}
+.aside-block p{margin:0;color:var(--ink-soft);font-size:14px;line-height:1.8}
+.aside-links{display:grid;gap:13px;justify-items:start}
+.aside-links a{border-bottom:1px solid var(--line);padding-bottom:4px;font-size:14px;font-weight:600}
+.aside-links a:hover{border-bottom-color:var(--clay);color:var(--clay)}
+
+/* ---- writing index ---- */
+.sample-note{
+  border:1px solid var(--line);background:#faf9fa;color:var(--ink-soft);
+  padding:18px 24px;margin-bottom:58px;font-size:12px;line-height:1.7;letter-spacing:.04em
+}
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;padding-bottom:clamp(88px,10vw,140px)}
+.post-card{display:flex;flex-direction:column}
+.post-art{
+  aspect-ratio:1.55;border:1px solid var(--line);display:grid;place-items:center;
+  position:relative;overflow:hidden;background:linear-gradient(135deg,#d7a0a833,#c8796812)
+}
+.post-art:before,.post-art:after{
+  content:"";position:absolute;border:1px solid #351b431f;border-radius:50%;width:62%;height:62%
+}
+.post-art:after{width:35%;height:35%}
+.post-art span{z-index:1;font-family:Georgia,Times New Roman,serif;font-size:66px;color:var(--plum)}
+.post-art.tone-2{background:linear-gradient(145deg,#6f486d33,#ffffff08)}
+.post-art.tone-3{background:linear-gradient(145deg,#c8796840,#ffffff05)}
+.post-cat{color:var(--clay);letter-spacing:.14em;text-transform:uppercase;margin:24px 0 14px;font-size:10px;font-weight:700}
+.post-card h3{
+  font-family:Georgia,Times New Roman,serif;font-weight:400;
+  font-size:27px;line-height:1.25;margin:0;min-height:102px
+}
+.post-excerpt{color:var(--ink-soft);font-size:14px;line-height:1.75;margin:16px 0 0}
+.post-meta{color:var(--ink-soft);letter-spacing:.1em;text-transform:uppercase;font-size:10px;margin:20px 0 0}
+.post-card>a{
+  border-top:1px solid var(--line);justify-content:space-between;
+  margin-top:auto;padding-top:22px;font-size:12px;font-weight:700;display:flex
+}
+.post-card>a:hover{color:var(--clay)}
+
+/* ---- article ---- */
+.article{max-width:790px;padding-top:clamp(66px,8vw,108px);padding-bottom:clamp(78px,9vw,120px)}
+.article h1{
+  font-family:Georgia,Times New Roman,serif;font-weight:400;
+  font-size:clamp(38px,4.2vw,58px);line-height:1.08;letter-spacing:-.035em;margin:24px 0 0
+}
+.article-meta{
+  color:var(--ink-soft);letter-spacing:.12em;text-transform:uppercase;
+  font-size:10px;font-weight:700;margin:28px 0 0;display:flex;gap:16px;flex-wrap:wrap
+}
+.article-body{margin-top:48px;border-top:1px solid var(--line);padding-top:48px}
+.article-body p{color:var(--ink-soft);font-size:17px;line-height:1.9;margin:0 0 28px}
+.article-body h2{font-size:clamp(26px,2.6vw,34px);letter-spacing:-.02em;margin:54px 0 20px}
+.article-body blockquote{margin:44px 0 40px}
+.article-foot{border-top:1px solid var(--line);margin-top:56px;padding-top:34px}
+
+/* ---- newsletter band ---- */
+.newsletter-form{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:34px}
+.newsletter-form input{
+  font-family:inherit;font-size:14px;color:var(--white);background:none;
+  border:0;border-bottom:1px solid #ffffff6b;padding:14px 4px;min-width:290px;outline:none
+}
+.newsletter-form input::placeholder{color:#fffdf9a8}
+.newsletter-form input:focus{border-bottom-color:var(--white)}
+.newsletter-form .button{margin-top:0}
+
+@media (width<=1050px){
+  .post-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (width<=760px){
+  .page-hero{padding-top:62px;padding-bottom:46px}
+  .chapter{padding-top:70px;padding-bottom:70px}
+  .contact-page{grid-template-columns:1fr;gap:50px;padding-bottom:80px}
+  .post-grid{grid-template-columns:1fr;gap:55px;padding-bottom:80px}
+  .post-card h3{min-height:auto}
+  .bio-card{padding:34px 28px}
+  .newsletter-form input{min-width:0;width:100%}
+}
+
+/* ---- mobile navigation ----
+   Kumar's build hid the nav below 1050px and offered nothing in its place.
+   That was survivable on a single page. With real pages it is not. */
+.mobile-nav{display:none}
+@media (width<=1050px){
+  .mobile-nav{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:26px;
+    border-bottom:1px solid var(--line);width:min(1400px,100% - 64px);margin:0 auto;
+    padding:15px 0 17px;color:var(--ink-soft);font-size:12px
+  }
+  .mobile-nav a[aria-current=page]{color:var(--clay)}
+  .mobile-nav a:hover{color:var(--clay)}
+}
+@media (width<=760px){
+  .mobile-nav{width:min(100% - 40px,620px);gap:18px;font-size:11px}
+}
