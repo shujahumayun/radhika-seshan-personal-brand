@@ -97,3 +97,12 @@ Deliberately different from concept 1 at every point. No cards anywhere.
 * `linkedin.com/in/seshanr` came from Kumar's mockup and is unverified.
 * Nav links are in page anchors, because this concept is a single page by
   instruction. If it wins, it gets the same five page sitemap concept 1 has.
+
+## Writing row photography
+
+Three free Unsplash photos, added 2026-09-02, grayscale to match the hero's
+own desaturated treatment: a forest gravel path (career strategy), sunlight
+through blinds (future of work), an open notebook and pen (professional
+learning). Same three images used on concept 1. Credits: paws and prints,
+Phil Hearing, Clay Banks. Placeholder photography, standing in for whatever
+image accompanies each real essay once one exists.

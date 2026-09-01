@@ -102,3 +102,14 @@ never needed. His bundle is not edited further.
   case this page becomes a link out and the sample layout is thrown away. Row 16, research still owed.
 - **Media & Press is not built.** The spec says it may fold into About. Waiting on her links list.
 - **Reading times on the sample cards are invented.** They come out when real pieces go in.
+
+## Perspectives / Writing photography
+
+Three free Unsplash photos, added 2026-09-02, sit inside the numbered art
+tiles on the homepage Perspectives grid and the Writing page's post cards:
+a forest gravel path (career strategy), sunlight through blinds (future of
+work), an open notebook and pen (professional learning). Desaturated and
+multiplied under Kumar's original rose/plum/clay gradient washes so the
+numerals and palette are unchanged. Same three images reused on concept 2.
+Credits: paws and prints, Phil Hearing, Clay Banks. Placeholder photography,
+standing in for whatever image accompanies each real essay once one exists.
