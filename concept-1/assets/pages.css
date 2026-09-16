@@ -168,3 +168,34 @@
 .perspective-art.art-3 .art-wash{background:linear-gradient(145deg,#c87968b8,#351b4340)}
 .post-art.tone-2 .art-wash{background:linear-gradient(145deg,#6f486dcc,#23162b66)}
 .post-art.tone-3 .art-wash{background:linear-gradient(145deg,#c87968b8,#351b4340)}
+
+/* ---- signature framework band (homepage) ----
+   Concept 2's violet statement band, brought over and rebuilt in this
+   concept's aubergine and Georgia. Scoped to .framework on purpose: the
+   .method-list rows on Offerings carry different content and stay as built. */
+.framework{background:var(--aubergine);color:var(--white);padding:clamp(96px,10vw,150px) 0}
+.framework .section-label{color:#fffdf9a3;margin-bottom:clamp(38px,4vw,56px);padding-top:0}
+.framework .section-label span{color:var(--rose)}
+.framework .section-heading{margin-bottom:0}
+.framework h2{color:var(--white)}
+
+.framework-steps{
+  margin-top:clamp(54px,6vw,86px);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(30px,4vw,64px)
+}
+.framework-step{border-top:1px solid #ffffff38;padding-top:28px}
+.step-num{
+  color:#0000;-webkit-text-stroke:1px #ffffff6b;
+  font-family:Georgia,Times New Roman,serif;font-style:normal;
+  font-size:clamp(48px,5vw,78px);line-height:1;display:block
+}
+.framework-step h3{
+  color:var(--white);margin:24px 0 0;
+  font-family:Georgia,Times New Roman,serif;font-weight:400;
+  font-size:clamp(24px,2.1vw,31px);line-height:1.15
+}
+.framework-step p{color:#fffdf9c2;margin:14px 0 0;font-size:14px;line-height:1.75}
+
+@media (width<=860px){
+  .framework-steps{grid-template-columns:1fr;gap:34px}
+}
